@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TEST2>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-09" time="12:52:29" key="db81f70d7d4ff590786f62f777bddd06"></Source>
+
+     <PROPERTIES>
+
+        <LOST
+            decimals="0"
+            default=""
+            edit_format=""
+            label="LOST"
+            lines="0"
+            lookup=""
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="4"
+            type="CHECK"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format="icon:,"
+         ></LOST>
+
+     </PROPERTIES>
+
+</TEST2>

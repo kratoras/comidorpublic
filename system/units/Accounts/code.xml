@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="testapp2" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2014-11-28" time="17:36:07" key="70fa16ad92f1939dcda4ee7e3b008843"></Source>
+
+     <DEFINITIONS>
+
+         <procedure1 type="Procedure"></procedure1>
+         <procedure2 type="Procedure"></procedure2>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_procedure1
+            action_type="after_unit_open"
+        ></s_procedure1>
+        <s_procedure2
+            action_type="s_DataForm1.on_submit"
+         ></s_procedure2>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_procedure1>
+            <![CDATA[START:s_procedure1
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.centered false
+	PROPERTY this table.border 0
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+  RETURN 1																	]]>
+        </s_procedure1>
+
+        <s_procedure2>
+            <![CDATA[START:s_procedure2
+	HTML
+		<div class='formContainer'>
+			<div class='rightBlockContainer'>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.NAME label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.NAME#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.CATEGORY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.CATEGORY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.IMPORTANCE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.IMPORTANCE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.ACCOUNT_SIZE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.ACCOUNT_SIZE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.REGION label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.REGION#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.CONTACT_ID label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.CONTACT_ID#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.BILING_ID label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.BILING_ID#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SHIPPING_ID label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SHIPPING_ID#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SECTOR label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SECTOR#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.CODE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.PASSWORD label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.PASSWORD#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.VALID_FROM label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.VALID_FROM#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.VALID_TO label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.VALID_TO#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.OWNER_ID label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.OWNER_ID#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.ADMIN_USER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.ADMIN_USER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.ADMIN_USER2 label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.ADMIN_USER2#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.ACCESS_CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.ACCESS_CODE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.CHANGE_CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.CHANGE_CODE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SUPER_USER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SUPER_USER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.CURRENCY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.CURRENCY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.IS_OWNER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.IS_OWNER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.EMPLOYEES_NUMBER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.EMPLOYEES_NUMBER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.ANNUAL_REVENUE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.ANNUAL_REVENUE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.INDUSTRY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.INDUSTRY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.PRODUCT_ID label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.PRODUCT_ID#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SHIPPING_ADDRESS label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SHIPPING_ADDRESS#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SHIPPING_CITY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SHIPPING_CITY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SHIPPING_STATE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SHIPPING_STATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SHIPPING_ZIP_CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SHIPPING_ZIP_CODE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SHIPPING_COUNTRY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SHIPPING_COUNTRY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.BILLING_ADDRESS label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.BILLING_ADDRESS#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.BILLING_CITY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.BILLING_CITY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.BILLING_STATE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.BILLING_STATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.BILLING_ZIP_CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.BILLING_ZIP_CODE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.BILLING_COUNTRY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.BILLING_COUNTRY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.CUSTOMER_STATE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.CUSTOMER_STATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.SUPPLIER_STATE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.SUPPLIER_STATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.PARTNER_STATE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.PARTNER_STATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.IS_CUSTOMER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.IS_CUSTOMER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.IS_VENDOR label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.IS_VENDOR#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.IS_PARTNER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.IS_PARTNER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_ACCOUNTS.TAX_NUMBER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_ACCOUNTS.TAX_NUMBER#</span>
+				</div>
+
+        </div>		</div>
+		
+	ENDHTML
+  RETURN 1																	]]>
+        </s_procedure2>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DATA-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-24" time="10:16:41" key="1d562ea85aa4b126e173d3902f72584a"></Source>
+
+     <DEFINITIONS>
+
+         <DataForm1 type="DataForm"></DataForm1>
+         <DataSet1 type="DataSet"></DataSet1>
+         <Record1 type="Record"></Record1>
+         <Variable2 type="Variable"></Variable2>
+         <Variable3 type="Variable"></Variable3>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_DataForm1
+            data_record="s_Record1"
+        ></s_DataForm1>
+        <s_DataSet1
+            actions="EDIT:Edit,DELETE:Delete"
+            data_record="s_Record1"
+            delete_mode="true"
+            insert_mode="true"
+            node_list="TITLE_RENT_BOOK"
+            select_query="SELECT * FROM RENT"
+            title="Rent_Book"
+            view_mode="true"
+        ></s_DataSet1>
+        <s_Record1
+            data_table="RENT"
+            delete_mode="true"
+            extra_fields="ALL"
+            insert_mode="true"
+            update_mode="true"
+            view_mode="true"
+        ></s_Record1>
+        <s_Variable2
+            select_query="SELECT COPIES FROM BOOKS"
+            variable_type="INTEGER"
+            where_clause="ID = #s_Record1.RENT.TITLE_RENT_BOOK#"
+        ></s_Variable2>
+        <s_Variable3
+            select_query="SELECT SUM(COPIES) FROM RENT"
+            variable_type="INTEGER"
+            where_clause="TITLE_RENT_BOOK = #s_Record1.TITLE_RENT_BOOK#"
+         ></s_Variable3>
+
+     </PROPERTIES>
+
+</DATA-OBJECTS>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<MENU-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-22" time="08:39:30" key="8c1417b4fd3c4df8db1873b83dc96660"></Source>
+
+     <DEFINITIONS>
+
+         <Books type="Menu"></Books>
+         <Library type="Menu"></Library>
+         <MemberList type="Menu"></MemberList>
+         <Members type="Menu"></Members>
+         <Rent type="Menu"></Rent>
+         <Rent_Book type="Menu"></Rent_Book>
+         <chat type="Menu"></chat>
+         <menu1 type="Menu"></menu1>
+         <menu2 type="Menu"></menu2>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <Rent
+            menu_type="web"
+            panel="s_Rent"
+            title="Rent"
+            unit_name="Rent"
+        ></Rent>
+        <s_Books
+            menu_type="web"
+            panel="s_Library"
+            title="Books"
+            unit_name="Book"
+        ></s_Books>
+        <s_Library
+            elements="s_Books,s_menu1,s_menu2"
+            menu_type="web"
+            title="Library"
+        ></s_Library>
+        <s_MemberList
+            menu_type="web"
+            panel="s_Members"
+            title="Member List"
+            unit_name="MemberList"
+        ></s_MemberList>
+        <s_Members
+            elements="s_Members,s_MemberList"
+            menu_type="web"
+            title="Members"
+        ></s_Members>
+        <s_Rent
+            elements="Rent,s_Rent_Book"
+            menu_type="web"
+            title="Rent"
+        ></s_Rent>
+        <s_Rent_Book
+            menu_type="web"
+            panel="s_Rent"
+            title="Rent Book"
+            unit_name="Rent_Book"
+        ></s_Rent_Book>
+        <s_chat
+            menu_type="web"
+            panel="SysAdmin"
+            position="1"
+            title="Chat"
+            url_name="javascript:createUserGroupsPanel(&apos;textChat&apos;)"
+        ></s_chat>
+        <s_menu1
+            menu_type="web"
+            panel="s_Library"
+            title="bl1"
+            unit_name="bl1"
+        ></s_menu1>
+        <s_menu2
+            menu_type="web"
+            panel="s_Library"
+            title="Calendar"
+            unit_name="Cal"
+         ></s_menu2>
+
+     </PROPERTIES>
+
+</MENU-OBJECTS>

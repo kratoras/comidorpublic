@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LIB2>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-09" time="12:34:16" key="82859a77341806a0b74718d144edc089"></Source>
+
+     <PROPERTIES>
+
+        <AUTHOR_NAME
+            decimals="0"
+            default=""
+            edit_format=""
+            label="Author"
+            lines="0"
+            lookup=""
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="100"
+            type="TEXT"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format=""
+        ></AUTHOR_NAME>
+        <BOOK_TITLE
+            decimals="0"
+            default=""
+            edit_format=""
+            label="Book Title"
+            lines="0"
+            lookup=""
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="100"
+            type="TEXT"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format=""
+        ></BOOK_TITLE>
+        <EDITION
+            decimals="0"
+            default=""
+            edit_format="#####"
+            label="Edition"
+            lines="0"
+            lookup=""
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="9"
+            type="NUMBER"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format=""
+        ></EDITION>
+        <LIBRARY_ID
+            decimals="0"
+            default=""
+            edit_format="#####"
+            label="Library ID"
+            lines="0"
+            lookup=""
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="9"
+            type="NUMBER"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format=""
+        ></LIBRARY_ID>
+        <YEAR
+            decimals="0"
+            default=""
+            edit_format="#####"
+            label="Year of Publication"
+            lines="0"
+            lookup=""
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="9"
+            type="NUMBER"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format=""
+         ></YEAR>
+
+     </PROPERTIES>
+
+</LIB2>

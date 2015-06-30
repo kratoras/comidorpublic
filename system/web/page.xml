@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PAGE-OBJECTS>
+
+<jPlaton version="2_2a"></jPlaton>
+<Application code="bo-system" name="B-open System Package" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2011-08-19" time="10:48:05" key="b88913d409b1b9e2b37da825231a0355"></Source>
+
+     <DEFINITIONS>
+
+       <SettingsContactForm type="Html.Form"></SettingsContactForm>
+              <SettingsContactFormEdit type="Html.Form"></SettingsContactFormEdit>
+			  <Panel7 type="Panel"></Panel7>
+     </DEFINITIONS>
+
+     <PROPERTIES>
+ <s_SettingsContactForm
+            data_record="s_globalContactRec"
+            edit_form="s_SettingsContactFormEdit"
+            panel="MainPanel"
+            position="-1"
+            title="General"
+        ></s_SettingsContactForm>
+ <s_SettingsContactFormEdit
+            panel="MainPanel"
+            position="-1"
+            title="General"
+        ></s_SettingsContactFormEdit>
+		<MainPanel
+            elements="s_Panel7"
+        ></MainPanel>
+        <s_Panel7
+            elements=""
+            height="19"
+            layout="VERTICAL"
+            panel="MainPanel"
+            width="22"
+            x_position="5"
+            y_position="2"
+        ></s_Panel7>
+      
+        
+     </PROPERTIES>
+
+     <SOURCES>
+     <s_SettingsContactForm>
+            <![CDATA[
+			<div style="float:left; padding:10px;">
+					<div id='imageContainer'>#s_globalContactRec.JP_CONTACTS.ICON class=img#</div>
+			</div>	
+			<div style="float:left;">
+					<div class='formRow'>
+						<span class='formRowLabel2' style='width:100px'>#s_globalContactRec.JP_CONTACTS.HOME_PHONE label#</span>
+						<span class='formRowValue'>#s_globalContactRec.JP_CONTACTS.HOME_PHONE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.WORK_PHONE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.WORK_PHONE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.CELL_PHONE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.CELL_PHONE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.FAX label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.FAX style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.E_MAIL label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.E_MAIL style=width:200px;#</span>
+					</div>
+					
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.ADDRESS label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.ADDRESS style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.ZIP_CODE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.ZIP_CODE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.TOWN label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.TOWN style=width:200px;#</span>
+					</div>
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.COUNTRY label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.COUNTRY style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.E_SITE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.E_SITE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.TOWN label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.TOWN style=width:200px;#</span>
+					</div>
+					<input type="button" class="customButton" style="float:right;" value="#Edit translate#" onclick="editRecord('nothinginteresting5', 's_globalContactRec', 'Main', '#s_globalContactRec.JP_CONTACTS.ID#','changeSettingsContact','getSettingsContactCardCallback','vertical');">
+	       </div>             
+	       
+      
+        
+
+                                                                                                                                                              ]]>
+        </s_SettingsContactForm>
+        
+         <s_SettingsContactFormEdit>
+            <![CDATA[
+		<div style="float:left;padding:10px">
+					<div class='formRow'>
+						<span class='formRowLabel2' style='width:100px'>#s_globalContactRec.JP_CONTACTS.HOME_PHONE label#</span>
+						<span class='formRowValue'>#s_globalContactRec.JP_CONTACTS.HOME_PHONE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.WORK_PHONE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.WORK_PHONE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.CELL_PHONE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.CELL_PHONE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.FAX label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.FAX style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.E_MAIL label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.E_MAIL style=width:200px;#</span>
+					</div>
+					
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.ADDRESS label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.ADDRESS style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.ZIP_CODE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.ZIP_CODE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.TOWN label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.TOWN style=width:200px;#</span>
+					</div>
+					<div class='formRow'>
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.COUNTRY label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.COUNTRY style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.E_SITE label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.E_SITE style=width:200px;#</span>
+					</div>
+					<div class='formRow'>	
+						<span class="formRowLabel2" style='width:100px'>#s_globalContactRec.JP_CONTACTS.TOWN label#</span>
+						<span class="formRowValue">#s_globalContactRec.JP_CONTACTS.TOWN style=width:200px;#</span>
+					</div>
+					
+	       </div>             
+                                                                                                                                                              ]]>
+        </s_SettingsContactFormEdit>
+
+
+     </SOURCES>
+
+</PAGE-OBJECTS>

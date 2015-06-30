@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-17" time="15:02:11" key="a8bf22e95ea9024d77e6c326a85e8570"></Source>
+
+     <DEFINITIONS>
+
+         <procedure1 type="Procedure"></procedure1>
+         <procedure2 type="Procedure"></procedure2>
+         <setProperties type="Procedure"></setProperties>
+         <validity type="Procedure"></validity>
+         <validity1 type="Procedure"></validity1>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_procedure1
+            action_type="after_unit_open"
+        ></s_procedure1>
+        <s_procedure2
+            action_type="s_DataForm1.on_submit"
+        ></s_procedure2>
+        <s_setProperties
+            action_type="after_unit_open"
+        ></s_setProperties>
+        <s_validity
+            action_type="s_Record1.before_insert"
+        ></s_validity>
+        <s_validity1
+            action_type="s_Record1.before_update"
+         ></s_validity1>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_procedure1>
+            <![CDATA[START:s_procedure1
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.centered false
+	PROPERTY this table.border 0
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+  RETURN 1																	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ]]>
+        </s_procedure1>
+
+        <s_procedure2>
+            <![CDATA[START:s_procedure2
+
+HTML
+<html>
+<head> 
+<title>JavaScript calendar</title>
+<script> 
+function displayCalendar(){
+ 
+ 
+ var htmlContent ="";
+ var FebNumberOfDays ="";
+ var counter = 1;
+ 
+ 
+ var dateNow = new Date();
+ var month = dateNow.getMonth();
+
+ var nextMonth = month+1; //+1; //Used to match up the current month with the correct start date.
+ var prevMonth = month -1;
+ var day = dateNow.getDate();
+ var year = dateNow.getFullYear();
+ 
+ 
+ //Determing if February (28,or 29)  
+ if (month == 1){
+    if ( (year%100!=0) && (year%4==0) || (year%400==0)){
+      FebNumberOfDays = 29;
+    }else{
+      FebNumberOfDays = 28;
+    }
+ }
+ 
+ 
+ // names of months and week days.
+ var monthNames = ["January","February","March","April","May","June","July","August","September","October","November", "December"];
+ var dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday", "Saturday"];
+ var dayPerMonth = ["31", ""+FebNumberOfDays+"","31","30","31","30","31","31","30","31","30","31"]
+ 
+ 
+ // days in previous month and next one , and day of week.
+ var nextDate = new Date(nextMonth +' 1 ,'+year);
+ var weekdays= nextDate.getDay();
+ var weekdays2 = weekdays
+ var numOfDays = dayPerMonth[month];
+     
+ 
+ 
+ 
+ // this leave a white space for days of pervious month.
+ while (weekdays>0){
+    htmlContent += "<td class='monthPre'></td>";
+ 
+ // used in next loop.
+     weekdays--;
+ }
+ 
+ // loop to build the calander body.
+ while (counter <= numOfDays){
+ 
+     // When to start new line.
+    if (weekdays2 > 6){
+        weekdays2 = 0;
+        htmlContent += "</tr><tr>";
+    }
+ 
+ 
+ 
+    // if counter is current day.
+    // highlight current day using the CSS defined in header.
+    if (counter == day){
+        htmlContent +="<td class='dayNow'  onMouseOver='this.style.background=\"#FF0000\"; this.style.color=\"#FFFFFF\"' "+
+        "onMouseOut='this.style.background=\"#FFFFFF\"; this.style.color=\"#00FF00\"'>"+counter+"</td>";
+    }else{
+        htmlContent +="<td class='monthNow' onMouseOver='this.style.background=\"#FF0000\"'"+
+        " onMouseOut='this.style.background=\"#FFFFFF\"'>"+counter+"</td>";    
+ 
+    }
+    
+    weekdays2++;
+    counter++;
+ }
+ 
+ 
+ 
+ // building the calendar html body.
+ var calendarBody = "<table class='calendar'> <tr class='monthNow'><th colspan='7'>"
+ +monthNames[month]+" "+ year +"</th></tr>";
+ calendarBody +="<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tues</td>"+
+ "<td>Wed</td> <td>Thurs</td> <td>Fri</td> <td>Sat</td> </tr>";
+ calendarBody += "<tr>";
+ calendarBody += htmlContent;
+ calendarBody += "</tr></table>";
+ // set the content of div .
+ document.getElementById("calendar").innerHTML=calendarBody;
+ 
+}
+</script> 
+</head> 
+ 
+<body onload="displayCalendar()"> 
+ 
+<div id="calendar"></div> 
+</body> 
+<style> 
+.monthPre{
+ color: gray;
+ text-align: center;
+}
+.monthNow{
+ color: blue;
+ text-align: center;
+}
+.dayNow{
+ border: 2px solid black;
+ color: #FF0000;
+ text-align: center;
+}
+.calendar td{
+ htmlContent: 2px;
+ width: 40px;
+}
+.monthNow th{
+ background-color: #000000;
+ color: #FFFFFF;
+ text-align: center;
+}
+.dayNames{
+ background: #0FF000;
+ color: #FFFFFF;
+ text-align: center;
+}
+ 
+</style> 
+</html> - See more at: http://www.codemiles.com/javascript-examples/simple-javascript-calendar-t7767.html#sthash.x1i1P6uM.dpuf
+
+
+
+ENDHTML
+
+
+	HTML
+		<div class='formContainer'>
+			<div class='rightBlockContainer'>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.NAME label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.NAME#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.SURNAME label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.SURNAME#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.STREET label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.STREET#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.STREET_NUMBER label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.STREET_NUMBER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.ID_NUMBER label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.ID_NUMBER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.LIBRARY_ID label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.LIBRARY_ID#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.AREA label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.AREA#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.MEMBER.BIRTH_DATE label#</span>
+					<span class='formRowValue'>#s_Record1.MEMBER.BIRTH_DATE#</span>
+				</div>
+
+        </div>		</div>
+        
+     
+	ENDHTML
+	RETURN 1																	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ]]>
+        </s_procedure2>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+        <s_validity>
+            <![CDATA[START:s_validity
+
+ 
+
+IF (#s_Record1.MEMBER.STREET_NUMBER#<=0) 
+{
+JAVASCRIPT alert("Enter a valid Street Number");
+RETURN 0
+}
+
+
+IF (#s_Record1.MEMBER.ID_NUMBER#<=0)
+{
+ERROR ERROR "Enter a valid Member ID Number"
+RETURN 0 
+}
+
+
+IF (#s_Record1.MEMBER.LIBRARY_ID#<=0)
+{
+ERROR ERROR "Enter a valid Library ID"
+RETURN 0 
+}
+
+
+RETURN 1                                                                                                                                                                                    ]]>
+        </s_validity>
+
+        <s_validity1>
+            <![CDATA[START:s_validity1
+
+IF (#s_Record1.MEMBER.STREET_NUMBER#<=0) 
+{
+ERROR ERROR "Enter a valid Street Number"
+RETURN 0
+}
+
+
+IF (#s_Record1.MEMBER.ID_NUMBER#<=0)
+{
+ERROR ERROR "Enter a valid Member ID Number"
+RETURN 0 
+}
+
+
+
+IF (#s_Record1.MEMBER.LIBRARY_ID#<=0)
+{
+ERROR ERROR "Enter a valid Library ID"
+RETURN 0 
+}
+
+
+RETURN 1                                                                                                                                                                                    ]]>
+        </s_validity1>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

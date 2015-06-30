@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-17" time="07:17:03" key="1c98f2451e18063132b3cf18e9ac2d28"></Source>
+
+     <DEFINITIONS>
+
+         <procedure1 type="Procedure"></procedure1>
+         <procedure2 type="Procedure"></procedure2>
+         <setProperties type="Procedure"></setProperties>
+         <validity type="Procedure"></validity>
+         <validity1 type="Procedure"></validity1>
+         <validity2 type="Procedure"></validity2>
+         <validity3 type="Procedure"></validity3>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_procedure1
+            action_type="after_unit_open"
+        ></s_procedure1>
+        <s_procedure2
+            action_type="s_DataForm1.on_submit"
+        ></s_procedure2>
+        <s_setProperties
+            action_type="after_unit_open"
+        ></s_setProperties>
+        <s_validity
+            action_type="s_Record1.before_insert"
+         ></s_validity>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_procedure1>
+            <![CDATA[START:s_procedure1
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.centered false
+	PROPERTY this table.border 0
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+  RETURN 1																	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ]]>
+        </s_procedure1>
+
+        <s_procedure2>
+            <![CDATA[START:s_procedure2
+
+ACTION s_Variable1 EXECUTE
+
+@VAR1:INTEGER
+@VAR1=#s_Variable1#
+	HTML
+	
+		<div class='formContainer'>
+			<div class='rightBlockContainer'>
+			
+			
+			    <div class='formRow'>
+					<span class='formRowLabel'>Copies apo to book</span>
+					<span class='formRowValue'>@VAR1</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.RENTED.TITLE_RENT_BOOK label#</span>
+					<span class='formRowValue'>#s_Record1.RENTED.TITLE_RENT_BOOK#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.RENTED.NAME_MEMBER label#</span>
+					<span class='formRowValue'>#s_Record1.RENTED.NAME_MEMBER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.RENTED.COPIES label#</span>
+					<span class='formRowValue'>#s_Record1.RENTED.COPIES#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.RENTED.START_DATE label#</span>
+					<span class='formRowValue'>#s_Record1.RENTED.START_DATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.RENTED.ENDDATE label#</span>
+					<span class='formRowValue'>#s_Record1.RENTED.ENDDATE#</span>
+				</div>
+
+        </div>		</div>
+		
+	ENDHTML
+  RETURN 1																	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ]]>
+        </s_procedure2>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+        <s_validity>
+            <![CDATA[START:s_validity
+
+IF (#s_Record1.RENTED.COPIES#<=0) 
+{
+    JAVASCRIPT alert("Enter a valid number of Copies");
+    RETURN 0
+}
+ELSE
+{
+    RETURN 1
+}                                                                                                                                                                                                                                                                                                                                                            ]]>
+        </s_validity>
+
+        <s_validity1>
+            <![CDATA[START:s_validity1
+
+IF (#s_Record1.RENTED.COPIES#<=0) 
+{
+JAVASCRIPT alert("Enter a valid number of Copies");
+RETURN 0
+}
+ELSE
+{
+RETURN 1
+}                                                                                                                                                                                                                                                                                                                                                                                                            ]]>
+        </s_validity1>
+
+        <s_validity2>
+            <![CDATA[START:s_validity2
+
+@VAR:INTEGER
+@VAR=(#s_Variable1#-#s_Record1.RENTED.COPIES#)
+
+IF ( @VAR< 0)
+{
+JAVASCRIPT alert("Not enought number of copies");
+RETURN 0
+}
+ELSE
+{
+RETURN 1
+}                                                                                                                                                                                                                                                                                                                                                                        ]]>
+        </s_validity2>
+
+        <s_validity3>
+            <![CDATA[START:s_validity3
+
+
+@VAR1:INTEGER
+@VAR1=(#s_Variable1#-#s_Record1.RENTED.COPIES#)
+
+IF ( @VAR1< 0)
+{
+JAVASCRIPT alert("Not enought number of copies");
+RETURN 0
+}
+ELSE
+{
+RETURN 1
+}                                                                                                                                                                                                                                    ]]>
+        </s_validity3>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

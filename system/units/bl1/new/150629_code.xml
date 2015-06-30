@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-29" time="14:08:38" key="5dc4358c2f7d455d81619995fd4b190f"></Source>
+
+     <DEFINITIONS>
+
+         <f1 type="Procedure"></f1>
+         <setProperties type="Procedure"></setProperties>
+         <test type="Procedure"></test>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_f1
+            action_type="after_unit_open"
+        ></s_f1>
+        <s_setProperties
+            action_type="after_unit_open"
+        ></s_setProperties>
+        <s_test
+            action_type="s_tasksWidget.on_execute"
+         ></s_test>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_f1>
+            <![CDATA[START:s_f1
+///////////////////////loop gia na parei to string me ta event kai imerominies
+@TELOS:INTEGER
+@NAME:STRING
+@TITLE:STRING
+@EVE:STRING
+ACTION s_DataSet2 EXECUTE  
+first s_DataSet2  
+LOOP   
+    IF (#VALUE#<=0)
+    BREAK  
+    @TELOS=#s_DataSet2.RENT.ENDDATE#
+    @NAME=#s_DataSet2.BOOKS.ISBN_ISSN#
+    @YY:INTEGER
+    @YY=(YEAROF)@TELOS
+    @MM:INTEGER
+    @MM=(MONTHOF)@TELOS
+    @MM=@MM-1
+    @DD:INTEGER
+    @DD=(DAYOF)@TELOS
+    @EVE=@EVE+"{title: '"+@NAME+"',start: new Date("+@YY+","+@MM+","+@DD+")},"
+next s_DataSet2
+ENDLOOP  
+////////////////////////////////////////////////////////////////
+
+
+
+
+HTML
+    <script>
+	    jQuery(document).ready(function() {
+            jQuery('#calendar').fullCalendar({
+                editable: true,
+                disableDragging: true,
+		   	    events:[
+		   	        @EVE
+		   	    ],
+                eventClick: function (calEvent) {
+                   
+                    callWidget(calEvent.title);
+                }
+		    });
+	    });
+    </script>
+    
+<div id='calendar'></div>
+
+
+
+
+ENDHTML
+
+
+RETURN 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ]]>
+        </s_f1>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this table.include system/units/bl1/resources/fullcalendar.css,system/units/bl1/resources/func.js,system/units/bl1/resources/fullcalendar_print.css,system/units/bl1/resources/tog.js,system/units/bl1/resources/a.css
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+        <s_test>
+            <![CDATA[START:s_test
+ACTION s_bookId EXECUTE
+
+
+setRecordId s_Record3 #s_bookId#
+ACTION s_Record3 VIEW
+
+HTML
+<a href="#openModal">Open Modal</a>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+    
+<span>Title: #s_Record3.BOOK.TITLE#</span><br>
+<span>Author: #s_Record3.BOOK.AUTHOR#</span><br>
+<span>Edition: #s_Record3.BOOK.EDITION#</span><br>
+<span>Year Of Publication: #s_Record3.BOOK.YEAR_OF_PUBLICATION#</span><br>
+<span>ISSN/ISBN: #s_Record3.BOOK.ISBN_ISSN#</span><br>
+    </div>
+</div>
+
+    <table id="myTable">
+    </table>
+    <br>
+ENDHTML
+
+
+
+RETURN 1            
+                                                                                                                                                                                                            ]]>
+        </s_test>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

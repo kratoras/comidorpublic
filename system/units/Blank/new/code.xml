@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-22" time="06:43:34" key="1a5f0e51dce43a14cd7ed25e4409db6b"></Source>
+
+     <DEFINITIONS>
+
+         <setProperties type="Procedure"></setProperties>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_setProperties
+            action_type="after_unit_open"
+         ></s_setProperties>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this table.include system/units/Blank/resources/fullcalendar.css,system/units/Blank/resources/moment_min.js,system/units/Blank/resources/fullcalendarjs.js,system/units/Blank/resources/fullcalendarjs_min.js,system/units/Blank/resources/fullcalendar_print.css,system/units/Blank/resources/fullcalendar_min.css,system/units/Blank/resources/gcal.js
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

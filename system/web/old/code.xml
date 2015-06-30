@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_2a"></jPlaton>
+<Application code="bo-system" name="B-open System Package" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2010-12-29" time="17:13:23" key="7a9ebed4dc7f3c6240b48f69cd387d56"></Source>
+
+     <DEFINITIONS>
+
+         <setProperties type="Procedure"></setProperties>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_setProperties
+            action_type="after_unit_open"
+        ></s_setProperties>
+         
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+				DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+				PROPERTY this table.columns 27
+				PROPERTY this table.rows 21
+				PROPERTY this table.centered false
+				PROPERTY this table.border 0
+				PROPERTY this table.tdwidth 4%
+				PROPERTY this table.cellpadding 0
+				PROPERTY this table.className newback2
+				PROPERTY this table.classNameie newback2
+				PROPERTY this table.layout auto
+				
+				/labels-logos
+				PROPERTY this td1.indivheight 100%
+				/left menu
+				PROPERTY this td55.overflow visible
+				PROPERTY this td55.indivheight 100%
+				PROPERTY this td55.style "style='padding-top: 3px;'"
+				/mainSlider
+				PROPERTY this td60.overflow visible
+				PROPERTY this td60.indivheight 100%
+				
+			RETURN 1                                                                                ]]>
+        </s_setProperties>
+
+
+
+
+
+
+
+
+
+
+     </SOURCES>
+
+</CODE-OBJECTS>

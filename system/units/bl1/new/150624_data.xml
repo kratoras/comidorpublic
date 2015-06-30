@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DATA-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-24" time="13:09:25" key="7e468253faa8e6f34ae476fb0585d879"></Source>
+
+     <DEFINITIONS>
+
+         <DataAction1 type="DataAction"></DataAction1>
+         <DataSet2 type="DataSet"></DataSet2>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_DataAction1
+            title="PRESS ME"
+        ></s_DataAction1>
+        <s_DataSet2
+            actions="EDIT:Edit,DELETE:Delete"
+            block_size="-1"
+            delete_mode="true"
+            execute_mode="true"
+            insert_mode="true"
+            select_query="SELECT RENT.ENDDATE,BOOKS.ISBN_ISSN FROM RENT LEFT JOIN BOOKS ON RENT.TITLE_RENT_BOOK=BOOKS.ID"
+            view_mode="true"
+         ></s_DataSet2>
+
+     </PROPERTIES>
+
+</DATA-OBJECTS>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DATA-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-25" time="14:10:08" key="e493d17c9b3cca04379878482455e6c7"></Source>
+
+     <DEFINITIONS>
+
+         <DataSet2 type="DataSet"></DataSet2>
+         <tasksWidget type="DataAction"></tasksWidget>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_DataSet2
+            actions="EDIT:Edit,DELETE:Delete"
+            block_size="-1"
+            delete_mode="true"
+            execute_mode="true"
+            insert_mode="true"
+            select_query="SELECT * FROM RENT LEFT JOIN BOOKS ON RENT.TITLE_RENT_BOOK=BOOKS.ID"
+            view_mode="true"
+         ></s_DataSet2>
+
+     </PROPERTIES>
+
+</DATA-OBJECTS>

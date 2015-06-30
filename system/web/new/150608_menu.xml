@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<MENU-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-08" time="12:04:40" key="98f20ad0e97950d2ec02b234e0204c4a"></Source>
+
+     <DEFINITIONS>
+
+         <chat type="Menu"></chat>
+         <menu1 type="Menu"></menu1>
+         <menu2 type="Menu"></menu2>
+         <spyrosunits type="Menu"></spyrosunits>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_chat
+            menu_type="web"
+            panel="SysAdmin"
+            position="1"
+            title="Chat"
+            url_name="javascript:createUserGroupsPanel(&apos;textChat&apos;)"
+        ></s_chat>
+        <s_menu1
+            menu_type="web"
+            panel="s_spyrosunits"
+            title="Accounts"
+            unit_name="Accounts"
+        ></s_menu1>
+        <s_menu2
+            menu_type="web"
+            panel="s_spyrosunits"
+            title="Car management"
+            unit_name="CarManagement"
+        ></s_menu2>
+        <s_spyrosunits
+            elements="s_menu1,s_menu2"
+            menu_type="web"
+            title="Spyros Units"
+         ></s_spyrosunits>
+
+     </PROPERTIES>
+
+</MENU-OBJECTS>

@@ -1,0 +1,6 @@
+.icon-admin {
+    background-position: center center;
+    background-image: url("packages/admin.png");
+    background-repeat: no-repeat;
+    height: 80px;
+}

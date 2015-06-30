@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-22" time="06:44:45" key="59330f3263d6099597ac099ff1b04125"></Source>
+
+     <DEFINITIONS>
+
+         <procedure2 type="Procedure"></procedure2>
+         <setProperties type="Procedure"></setProperties>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_procedure2
+            action_type="after_unit_open"
+        ></s_procedure2>
+        <s_setProperties
+            action_type="after_unit_open"
+         ></s_setProperties>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_procedure2>
+            <![CDATA[START:s_procedure2
+
+HTML
+
+<script>
+
+	$(document).ready(function() {
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			editable: true,
+			events: [
+				{
+					title: 'All Day Event',
+					start: new Date(y, m, 1)
+				},
+				{
+					title: 'Long Event',
+					start: new Date(y, m, d-5),
+					end: new Date(y, m, d-2)
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d-3, 16, 0),
+					allDay: false
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d+4, 16, 0),
+					allDay: false
+				},
+				{
+					title: 'Meeting',
+					start: new Date(y, m, d, 10, 30),
+					allDay: false
+				},
+				{
+					title: 'Lunch',
+					start: new Date(y, m, d, 12, 0),
+					end: new Date(y, m, d, 14, 0),
+					allDay: false
+				},
+				{
+					title: 'Birthday Party',
+					start: new Date(y, m, d+1, 19, 0),
+					end: new Date(y, m, d+1, 22, 30),
+					allDay: false
+				},
+				{
+					title: 'Click for Google',
+					start: new Date(y, m, 28),
+					end: new Date(y, m, 29),
+					url: 'http://google.com/'
+				}
+			]
+		});
+		
+	});
+
+</script>
+
+<div id='calendar'></div>
+
+ENDHTML
+RETURN 1
+                                                                                                            ]]>
+        </s_procedure2>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this table.include system/units/blank1/resources/fullcalendarprint.css,system/units/blank1/resources/fullcalendar.css,system/units/blank1/resources/fullcalendarjs.js,system/units/blank1/resources/jquery_min.js,system/units/blank1/resources/fullcalendar_min.js,system/units/blank1/resources/gcal.js
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

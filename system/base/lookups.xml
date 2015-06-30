@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LOOKUP-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-09" time="14:23:47" key="819ed5e57e0ae879f96721d94f629c73"></Source>
+
+     <DEFINITIONS>
+
+         <ACCOUNTS_INDUSTRIES type="Tree"></ACCOUNTS_INDUSTRIES>
+         <ACCOUNT_CATEGORIES type="Tree"></ACCOUNT_CATEGORIES>
+         <ACCOUNT_REGIONS type="Tree"></ACCOUNT_REGIONS>
+         <ARTICLE_CATEGORIES type="Tree"></ARTICLE_CATEGORIES>
+         <BOOK_TITLES type="List"></BOOK_TITLES>
+         <CASE_CATEGORIES type="Tree"></CASE_CATEGORIES>
+         <CONTACT_CATEGORIES type="Tree"></CONTACT_CATEGORIES>
+         <COUNTRIES type="List"></COUNTRIES>
+         <CURRENCIES type="List"></CURRENCIES>
+         <CURRENCY type="List"></CURRENCY>
+         <EOBJECT_DIRECTORIES type="Tree"></EOBJECT_DIRECTORIES>
+         <EVENT_CATEGORIES type="Tree"></EVENT_CATEGORIES>
+         <JOB_TYPES type="List"></JOB_TYPES>
+         <LANGUAGIES type="List"></LANGUAGIES>
+         <MESSAGE_FOLDERS type="Tree"></MESSAGE_FOLDERS>
+         <TASK_TYPES type="List"></TASK_TYPES>
+         <TASK_UNITS type="List"></TASK_UNITS>
+         <TOPIC_CATEGORIES type="Tree"></TOPIC_CATEGORIES>
+         <TOWN_LISTCODE type="List"></TOWN_LISTCODE>
+         <USERS_ACCESS_RIGHTS type="Tree"></USERS_ACCESS_RIGHTS>
+         <WIDGET_CATEGORIES type="Tree"></WIDGET_CATEGORIES>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <ACCOUNTS_INDUSTRIES
+            access_level="public"
+            code_size="20"
+            order_by="VALUE"
+            value_size="40"
+            view_format="VALUE"
+        ></ACCOUNTS_INDUSTRIES>
+        <ACCOUNT_CATEGORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></ACCOUNT_CATEGORIES>
+        <ACCOUNT_REGIONS
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></ACCOUNT_REGIONS>
+        <ARTICLE_CATEGORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></ARTICLE_CATEGORIES>
+        <BOOK_TITLES
+            access_level=""
+            code_size="100"
+            order_by=""
+            value_size="100"
+            view_format="value"
+        ></BOOK_TITLES>
+        <CASE_CATEGORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></CASE_CATEGORIES>
+        <CONTACT_CATEGORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></CONTACT_CATEGORIES>
+        <COUNTRIES
+            access_level="public"
+            code_size="20"
+            order_by="VALUE"
+            value_size="40"
+            view_format="VALUE"
+        ></COUNTRIES>
+        <CURRENCIES
+            access_level="public"
+            code_size="20"
+            order_by="VALUE"
+            value_size="40"
+            view_format="VALUE"
+        ></CURRENCIES>
+        <CURRENCY
+            access_level="public"
+            code_size="20"
+            order_by="VALUE"
+            value_size="40"
+            view_format="VALUE"
+        ></CURRENCY>
+        <EOBJECT_DIRECTORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></EOBJECT_DIRECTORIES>
+        <EVENT_CATEGORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></EVENT_CATEGORIES>
+        <JOB_TYPES
+            access_level="public"
+            code_size="40"
+            order_by="VALUE"
+            value_size="40"
+        ></JOB_TYPES>
+        <LANGUAGIES
+            access_level="public"
+            code_size="20"
+            order_by="VALUE"
+            value_size="40"
+            view_format="CODE,VALUE"
+        ></LANGUAGIES>
+        <MESSAGE_FOLDERS
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></MESSAGE_FOLDERS>
+        <TASK_TYPES
+            access_level="private"
+            code_size="20"
+            order_by="VALUE"
+            value_size="40"
+        ></TASK_TYPES>
+        <TASK_UNITS
+            access_level="public"
+            code_size="20"
+            order_by="VALUE"
+            value_size="40"
+            view_format="VALUE"
+        ></TASK_UNITS>
+        <TOPIC_CATEGORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></TOPIC_CATEGORIES>
+        <TOWN_LISTCODE
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+            view_format="VALUE"
+        ></TOWN_LISTCODE>
+        <USERS_ACCESS_RIGHTS
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+        ></USERS_ACCESS_RIGHTS>
+        <WIDGET_CATEGORIES
+            access_level="public"
+            code_size="100"
+            order_by="VALUE"
+            value_size="100"
+         ></WIDGET_CATEGORIES>
+
+     </PROPERTIES>
+
+</LOOKUP-OBJECTS>

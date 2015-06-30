@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<MENU-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-10" time="12:09:52" key="2d9373ca65fca94924d759ca5826a028"></Source>
+
+     <DEFINITIONS>
+
+         <Books type="Menu"></Books>
+         <Customer type="Menu"></Customer>
+         <chat type="Menu"></chat>
+         <menu1 type="Menu"></menu1>
+         <menu2 type="Menu"></menu2>
+         <menu3 type="Menu"></menu3>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_Books
+            elements="s_menu3"
+            menu_type="web"
+            title="Books"
+        ></s_Books>
+        <s_Customer
+            elements="s_menu2"
+            menu_type="web"
+            title="Customer"
+        ></s_Customer>
+        <s_chat
+            menu_type="web"
+            panel="SysAdmin"
+            position="1"
+            title="Chat"
+            url_name="javascript:createUserGroupsPanel(&apos;textChat&apos;)"
+        ></s_chat>
+        <s_menu1
+            panel="SysAdmin"
+            title="test6"
+            unit_name="test6"
+        ></s_menu1>
+        <s_menu2
+            menu_type="web"
+            panel="s_Customer"
+            title="Info"
+            unit_name="cus"
+        ></s_menu2>
+        <s_menu3
+            menu_type="web"
+            panel="s_Books"
+            title="Book"
+            unit_name="tst2"
+         ></s_menu3>
+
+     </PROPERTIES>
+
+</MENU-OBJECTS>

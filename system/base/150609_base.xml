@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BASE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-09" time="13:18:42" key="5fd912dc56559f04f57387ad025a0cca"></Source>
+
+     <DEFINITIONS>
+
+         <CUS type="Table"></CUS>
+         <LIB type="Table"></LIB>
+         <LIB1 type="Table"></LIB1>
+         <LIB2 type="Table"></LIB2>
+         <SP3 type="Table"></SP3>
+         <SP4 type="Table"></SP4>
+         <TEST2 type="Table"></TEST2>
+         <TEST3 type="Table"></TEST3>
+         <test1 type="Table"></test1>
+
+     </DEFINITIONS>
+
+     <SOURCES>
+
+        <CUS>
+            <![CDATA[CREATE TABLE CUS (ID BIGINT PRIMARY KEY NOT NULL, NAME VARCHAR(100),SURNAME VARCHAR(100), CARD_NUMBER INT,ID_NUMBER INT,STREET VARCHAR(100),STREET_NUMBER INT,BOOK_BORROWED VARCHAR(100),BOOK_BORROWED_ID INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);            ]]>
+        </CUS>
+
+        <LIB>
+            <![CDATA[CREATE TABLE LIB (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100)LIBRARY_ID INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                    ]]>
+        </LIB>
+
+        <LIB1>
+            <![CDATA[CREATE TABLE LIB1 (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100),LIBRARY_ID INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                        ]]>
+        </LIB1>
+
+        <LIB2>
+            <![CDATA[CREATE TABLE LIB2 (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100),LIBRARY_ID INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                            ]]>
+        </LIB2>
+
+        <SP3>
+            <![CDATA[CREATE TABLE SP3 (ID BIGINT PRIMARY KEY NOT NULL, NAME VARCHAR(100), SURNMAME VARCHAR(255), CARD_ID INT, BOOK_TITLE VARCHAR(60),BOOK_ID BIGINT,  CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                ]]>
+        </SP3>
+
+        <SP4>
+            <![CDATA[CREATE TABLE SP4 (ID BIGINT PRIMARY KEY NOT NULL, NAME VARCHAR(100), SURNMAME VARCHAR(255), CARD_ID INT, BOOK_TITLE VARCHAR(60),BOOK_ID BIGINT,  CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                            ]]>
+        </SP4>
+
+        <TEST2>
+            <![CDATA[CREATE TABLE TEST2 (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100),LIBRARY_ID INT,LOST TINYINT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                ]]>
+        </TEST2>
+
+        <TEST3>
+            <![CDATA[CREATE TABLE TEST3 (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100),LIBRARY_ID INT,LOST TINYINT,HOLD TINYINT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                    ]]>
+        </TEST3>
+
+        <test1>
+            <![CDATA[CREATE TABLE test1 (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100),LIBRARY_ID INT,LOST CHECK,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                            ]]>
+        </test1>
+
+     </SOURCES>
+
+     <PROPERTIES>
+
+        <JP_ACCOUNTS
+            date=""
+            description="Accounts"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="NAME"
+            searchby="ALL"
+            unit=""
+        ></JP_ACCOUNTS>
+        <LIB2
+            date=""
+            description="LIB2"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="BOOK_TITLE"
+            searchby=""
+            unit=""
+        ></LIB2>
+        <TEST3
+            date=""
+            description="TEST3"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="BOOK_TITLE"
+            searchby=""
+            unit=""
+         ></TEST3>
+
+     </PROPERTIES>
+
+</BASE-OBJECTS>

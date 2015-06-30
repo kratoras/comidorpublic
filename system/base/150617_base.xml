@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BASE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-17" time="09:37:33" key="a263e060472feb40e783598e64b34c98"></Source>
+
+     <DEFINITIONS>
+
+         <AAAA type="Table"></AAAA>
+         <BBBB type="Table"></BBBB>
+         <BOOKS type="Table"></BOOKS>
+         <CON type="Table"></CON>
+         <CUS type="Table"></CUS>
+         <LIB11 type="Table"></LIB11>
+         <MEMBER type="Table"></MEMBER>
+         <RENT type="Table"></RENT>
+         <RENTED type="Table"></RENTED>
+         <TEST3 type="Table"></TEST3>
+
+     </DEFINITIONS>
+
+     <SOURCES>
+
+        <AAAA>
+            <![CDATA[CREATE TABLE AAAA (ID BIGINT PRIMARY KEY NOT NULL, NAME VARCHAR(100),SURNAME VARCHAR(100), CARD_NUMBER INT,ID_NUMBER INT,STREET VARCHAR(100),STREET_NUMBER INT,BOOK_BORROWED VARCHAR(100),BOOK_BORROWED_ID INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                                                                                                                                                                                            ]]>
+        </AAAA>
+
+        <BBBB>
+            <![CDATA[CREATE TABLE BBBB (ID BIGINT PRIMARY KEY NOT NULL, TITLE VARCHAR(100),AUTHOR VARCHAR(100), CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                        ]]>
+        </BBBB>
+
+        <BOOKS>
+            <![CDATA[CREATE TABLE BOOKS (ID BIGINT PRIMARY KEY NOT NULL, TITLE VARCHAR(100),AUTHOR VARCHAR(100), EDITION INT,YEAR_OF_PUBLICATION INT,ISBN_ISSN VARCHAR(100),LIBRARY_NUMBER INT,CONDITION_BOOK INT,BORROWED_BEGIN INT,BORROWED_END INT,COPIES INT,AVALIABLE_COPIES INT,VALUE_PRICE INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                                            ]]>
+        </BOOKS>
+
+        <CON>
+            <![CDATA[CREATE TABLE CON (ID BIGINT PRIMARY KEY NOT NULL, CONDI INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ]]>
+        </CON>
+
+        <CUS>
+            <![CDATA[CREATE TABLE CUS (ID BIGINT PRIMARY KEY NOT NULL, NAME VARCHAR(100),SURNAME VARCHAR(100), CARD_NUMBER INT,ID_NUMBER INT,STREET VARCHAR(100),STREET_NUMBER INT,BOOK_BORROWED VARCHAR(100),BOOK_BORROWED_ID INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ]]>
+        </CUS>
+
+        <LIB11>
+            <![CDATA[CREATE TABLE LIB11 (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100),LIBRARY_ID INT,LOST TINYINT,HOLD TINYINT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ]]>
+        </LIB11>
+
+        <MEMBER>
+            <![CDATA[CREATE TABLE MEMBER (ID BIGINT PRIMARY KEY NOT NULL, NAME VARCHAR(100),SURNAME VARCHAR(100), STREET VARCHAR(100),STREET_NUMBER INT,ID_NUMBER INT,LIBRARY_ID INT,AREA VARCHAR(100),BIRTH_DATE INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                                                                                                                                                                                ]]>
+        </MEMBER>
+
+        <RENT>
+            <![CDATA[CREATE TABLE RENT (ID BIGINT PRIMARY KEY NOT NULL,TITLE_RENT_BOOK VARCHAR(100),NAME_MEMBER VARCHAR(100), COPIES INT,AVALIABLE_COPIES INT,START_DATE INT,ENDDATE INT,CREATE_USER INT,CREATE_DATETIME TIMESTAMP,UPDATE_USER INT,UPDATE_DATETIME TIMESTAMP);                                    ]]>
+        </RENT>
+
+        <RENTED>
+            <![CDATA[CREATE TABLE RENTED (ID BIGINT PRIMARY KEY NOT NULL, TITLE_RENT_BOOK VARCHAR(100),NAME_MEMBER VARCHAR(100), COPIES INT,START_DATE INT,ENDDATE INT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                    ]]>
+        </RENTED>
+
+        <TEST3>
+            <![CDATA[CREATE TABLE TEST3 (ID BIGINT PRIMARY KEY NOT NULL, BOOK_TITLE VARCHAR(100),AUTHOR_NAME VARCHAR(100), EDITION INT,YEAR INT,ISSN_ISBN VARCHAR(100),LIBRARY_ID INT,LOST TINYINT,HOLD TINYINT,CREATE_USER INT, CREATE_DATETIME TIMESTAMP, UPDATE_USER INT, UPDATE_DATETIME TIMESTAMP);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ]]>
+        </TEST3>
+
+     </SOURCES>
+
+     <PROPERTIES>
+
+        <BOOKS
+            date=""
+            description="BOOKS"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="TITLE"
+            searchby=""
+            unit=""
+        ></BOOKS>
+        <CUS
+            date=""
+            description="CUS"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="SURNAME"
+            searchby=""
+            unit=""
+        ></CUS>
+        <JP_ACCOUNTS
+            date=""
+            description="Accounts"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="NAME"
+            searchby="ALL"
+            unit=""
+        ></JP_ACCOUNTS>
+        <LIB2
+            date=""
+            description="LIB2"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="BOOK_TITLE"
+            searchby=""
+            unit=""
+        ></LIB2>
+        <MEMBER
+            date=""
+            description="MEMBER"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="SURNAME"
+            searchby=""
+            unit=""
+        ></MEMBER>
+        <RENTED
+            date=""
+            description="RENTED"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="TITLE_RENT_BOOK"
+            searchby=""
+            unit=""
+        ></RENTED>
+        <TEST3
+            date=""
+            description="TEST3"
+            form_query=""
+            form_source=""
+            id="ID"
+            identity="BOOK_TITLE"
+            searchby=""
+            unit="tst2"
+         ></TEST3>
+
+     </PROPERTIES>
+
+</BASE-OBJECTS>

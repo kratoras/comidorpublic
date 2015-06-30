@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DATA-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-29" time="10:45:37" key="7ec3441797897a8d5cb47f82f7d36978"></Source>
+
+     <DEFINITIONS>
+
+         <DataSet2 type="DataSet"></DataSet2>
+         <Record3 type="Record"></Record3>
+         <bookId type="Variable"></bookId>
+         <flag type="Variable"></flag>
+         <tasksWidget type="DataAction"></tasksWidget>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_DataSet2
+            actions="EDIT:Edit,DELETE:Delete"
+            block_size="-1"
+            delete_mode="true"
+            execute_mode="true"
+            insert_mode="true"
+            select_query="SELECT * FROM RENT LEFT JOIN BOOKS ON RENT.TITLE_RENT_BOOK=BOOKS.ID"
+            view_mode="true"
+        ></s_DataSet2>
+        <s_Record3
+            data_table="BOOKS"
+            extra_fields="ALL"
+        ></s_Record3>
+        <s_bookId
+            select_query="SELECT ID FROM BOOKS "
+            variable_type="LONG"
+            where_clause="ISBN_ISSN = #s_flag#"
+        ></s_bookId>
+        <s_flag
+            variable_type="TEXT"
+         ></s_flag>
+
+     </PROPERTIES>
+
+</DATA-OBJECTS>

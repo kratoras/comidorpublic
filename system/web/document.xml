@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DOCUMENT-OBJECTS>
+
+<jPlaton version="2_2a"></jPlaton>
+<Application code="bo-system" name="B-open System Package" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2010-12-23" time="11:07:03" key="e0bb7f856589cf850454be36817e11c2"></Source>
+
+     <DEFINITIONS>
+
+         <s_help_calendar_el type="Document"></s_help_calendar_el>
+         <s_help_entryManagement_el type="Document"></s_help_entryManagement_el>
+         <s_help_dashboard_el type="Document"></s_help_dashboard_el>
+         <s_help_outlook_el type="Document"></s_help_outlook_el>
+         <s_help_settings_el type="Document"></s_help_settings_el>
+		 <s_help_parameters_el type="Document"></s_help_parameters_el>
+		 <s_help_administration_el type="Document"></s_help_administration_el>
+		 <s_help_esupport_el type="Document"></s_help_esupport_el>		 
+		 <s_help_viewtypes_el type="Document"></s_help_viewtypes_el>	 
+		 <s_help_sendingmessages_el type="Document"></s_help_sendingmessages_el>
+		 <s_help_chat_el type="Document"></s_help_chat_el>
+		 
+		 <s_help_calendar_en type="Document"></s_help_calendar_en>
+         <s_help_entryManagement_en type="Document"></s_help_entryManagement_en>
+         <s_help_dashboard_en type="Document"></s_help_dashboard_en>
+         <s_help_outlook_en type="Document"></s_help_outlook_en>
+         <s_help_settings_en type="Document"></s_help_settings_en>
+		 <s_help_parameters_en type="Document"></s_help_parameters_en>
+		 <s_help_administration_en type="Document"></s_help_administration_en>
+		 <s_help_esupport_en type="Document"></s_help_esupport_en>		 
+		 <s_help_viewtypes_en type="Document"></s_help_viewtypes_en>	 
+		 <s_help_sendingmessages_en type="Document"></s_help_sendingmessages_en>
+		 <s_help_chat_en type="Document"></s_help_chat_en>
+
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_help_calendar_el
+            file_spec="text/html"
+            language="el_GR"
+            position="1"
+            title="Ημερολόγιο"
+        ></s_help_calendar_el>
+        <s_help_entryManagement_el
+            file_spec="text/html"
+            language="el_GR"
+            position="3"
+            title="Διαχείριση Δεδομένων"
+        ></s_help_entryManagement_el>
+        <s_help_dashboard_el
+            file_spec="text/html"
+            language="el_GR"
+            position="0"
+            title="Dashboard"
+        ></s_help_dashboard_el>
+        <s_help_outlook_el
+            file_spec="text/html"
+            language="el_GR"
+            position="2"
+            title="Outlook"
+        ></s_help_outlook_el>
+        <s_help_settings_el
+            file_spec="text/html"
+            language="el_GR"
+            position="4"
+            title="Αλλαγή Ρυθμίσεων"
+         ></s_help_settings_el>
+		 <s_help_parameters_el
+            file_spec="text/html"
+            language="el_GR"
+            position="5"
+            title="Αλλαγή Παραμέτρων"
+         ></s_help_parameters_el>
+		 <s_help_administration_el
+            file_spec="text/html"
+            language="el_GR"
+            position="6"
+            title="Διαχείριση Συστήματος"
+         ></s_help_administration_el>
+		 <s_help_esupport_el
+            file_spec="text/html"
+            language="el_GR"
+            position="8"
+            title="Υποστήριξη"
+         ></s_help_esupport_el>
+		 <s_help_viewtypes_el
+            file_spec="text/html"
+            language="el_GR"
+            position="7"
+            title="Προβολές Δεδομένων"
+         ></s_help_viewtypes_el>
+		 <s_help_sendingmessages_el
+            file_spec="text/html"
+            language="el_GR"
+            position="9"
+            title="Στέλνοντας ένα Μήνυμα"
+         ></s_help_sendingmessages_el>
+		 <s_help_chat_el
+            file_spec="text/html"
+            language="el_GR"
+            position="9"
+            title="Συνομιλία"
+         ></s_help_chat_el>
+		 
+		 <s_help_calendar_en
+            file_spec="text/html"
+            language="en_US"
+            position="1"
+            title="Calendar"
+        ></s_help_calendar_en>
+        <s_help_entryManagement_en
+            file_spec="text/html"
+            language="en_US"
+            position="3"
+            title="Managing Entries"
+        ></s_help_entryManagement_en>
+        <s_help_dashboard_en
+            file_spec="text/html"
+            language="en_US"
+            position="0"
+            title="Dashboard"
+        ></s_help_dashboard_en>
+        <s_help_outlook_en
+            file_spec="text/html"
+            language="en_US"
+            position="2"
+            title="Outlook"
+        ></s_help_outlook_en>
+        <s_help_settings_en
+            file_spec="text/html"
+            language="en_US"
+            position="4"
+            title="Change Settings"
+         ></s_help_settings_en>
+		 <s_help_parameters_en
+            file_spec="text/html"
+            language="en_US"
+            position="5"
+            title="Change Parameters"
+         ></s_help_parameters_en>
+		 <s_help_administration_en
+            file_spec="text/html"
+            language="en_US"
+            position="6"
+            title="Administration"
+         ></s_help_administration_en>
+		 <s_help_esupport_en
+            file_spec="text/html"
+            language="en_US"
+            position="8"
+            title="Support"
+         ></s_help_esupport_en>
+		 <s_help_viewtypes_en
+            file_spec="text/html"
+            language="en_US"
+            position="7"
+            title="View Types"
+         ></s_help_viewtypes_en>
+		 <s_help_sendingmessages_en
+            file_spec="text/html"
+            language="en_US"
+            position="9"
+            title="Sending a Message"
+         ></s_help_sendingmessages_en>
+		 <s_help_chat_en
+            file_spec="text/html"
+            language="en_US"
+            position="9"
+            title="Chat"
+         ></s_help_chat_en>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_help_calendar_el>
+            <![CDATA[Για να μπορέσετε να χρησιμοποιήσετε αποτελεσματικά όλες τις λειτουργίες του ημερολογίου πρέπει πρώτα να ρυθμίσετε τις εργάσιμες μέρες και ώρες σας. Αυτό μπορείτε να το κάνετε καθορίζοντας ένα πρόγραμμα απο το μενού Ρυθμίσεις πάνω δεξιά. <br><br>
+	<ul>
+	<li>Αφoύ ενεργοποιηθεί το προγραμμά σας, το ημερολόγιο θα χρωματίσει τις μέρες ανάλογα με τις ρυθμίσεις σας, πράσινο για τις εργάσιμες και γκρι για τις μη εργάσιμες. Μπορείτε να αλλάξετε μια συγκεκριμένη μέρα απο την λίστα που εμφανίζεται στην κορυφή της Λίστας Εργασιών.</li>
+	<li>Στην λίστα εργασιών μπορείτε να δείτε όλες τις υποχρεώσεις για την ημέρα που έχετε επιλέξει, ενώ το μικρό μενού στην πάνω δεξιά γωνία του πλαισίου σας δίνει την δυνατότητα να αποκρύψετε συγκεκριμένα είδη (π.χ. τις σημειώσεις). </li>
+	<li>Για να δημιουργήσετε μια νέα Δραστηριότητα απλά πατήστε πάνω στην επιθυμητή ώρα κάποιας ημέρας και θα εμφανιστεί το αντίστοιχο πλαίσιο διαλόγου για την εισαγωγή. Όταν θεωρήσετε ότι έχετε τελειώσει με μια υποχρέωση, πατήστε το γκρί check <img src="DataServlet?unit=Main&image=PENDING" /> στα αριστερά του ονοματός της. Το check θα πρασινίσει για να δηλώσει την αλλαγή, ενώ τα γκρι checks υποδηλώνουν υποχρεώσεις που ακόμα εκκρεμούν
+	<br><br><br><br><br>Tip: Αν έχετε υποχρεώσεις που εκκρεμούν απο προηγούμενες μέρες, στην κορυφή τις λίστας θα εμφανιστεί ένα ενημερωτικό μήνυμα!                                                                                                                                    ]]>
+        </s_help_calendar_el>
+		<s_help_calendar_en>
+            <![CDATA[Before you can use the Calendar fully and effectively you first need to set up your working days and hours. You can do that by following "Settings" on the top right corner of Comidor, under the "Create Schedule" tab.<br><br>
+	<ul>
+	<li>Once your Schedule is created Comidor will color the days depending on your settings. Green for the working days, and Grey for the non-working days. Should you wish to change the status of a particular day, simply select it and choose a different option from the menu at the top of the To-Do list. Please note that if both backround and text color is grey, it means that you have not yet set a schedule for this period, while the rose color means that there are active tasks for this day.</li>
+	<li>The To-Do list shows all the tasks available for this day, while the small icon-menu on the top right corner allows to toggle which categories you wish to see. </li>
+	<li>To create a new task simply click on the hour you wish and add the details on the pop up window. Once you think your are done with a task click on the greyed out check <img src="DataServlet?unit=Main&image=PENDING" />. The check will become green to reflect the change and you can always toggle it back if something changes.</li>
+	</ul>
+	<br><br><br>Tip: If you have tasks pending from the previous days you should see a warning message at the top of the To-Do  list!                                                                                                ]]>
+        </s_help_calendar_en>
+
+        <s_help_entryManagement_el>
+            <![CDATA[Οι περισσότεροι πίνακες του Comidor λειτουργούν με την ίδια απλή φιλοσοφία. Με την παρακάτω διαδικασία μπορείτε να χειριστείτε σχεδόν οποιαδήποτε ενότητα του Comidor! Για παράδειγμα για να διαχειριστείτε τις επαφές σας:
+	<ul>
+	<li>Απο το μενού Εφαρμογών στα αριστερά κάντε κλικ στις <b>Επαφές</b></li>
+	<li>Απο την μπάρα ενεργειών στην κορυφή, επιλέξτε το <b> εισαγωγή</b>. Ένα νέο παράθυρο θα εμφανιστεί όπου μπορείτε να βάλετε τα στοιχεία της νέας επαφής</li>
+	<li>Για να διαγράψετε μια επαφή, επιλέξτε τον από τον πίνακα και πατήστε το <b>Διαγραφή</b> που βρίσκεται στην μπάρα ενεργειών </li>
+	<li>Για να δείτε τα στοιχεία μιας επαφής, κάντε διπλό κλικ πάνω στη γραμμή του πίνακα. Η φόρμα με τα στοιχεία της επαφής θα εμφανιστεί</li>
+	<li>Για να ενημερώσετε μια επαφή δείτε πρώτα τα στοιχεία της κάνοντας διπλό κλικ, και έπειτα επιλέξτε το εικονίδιο ενημέρωσης στο δεξί μέρος της φόρμας ( <img src="DataServlet?unit=Main&image=EDIT" /> )</li>
+	</ul>
+<br><br><br><br><br><br>Tip:  Μπορείτε να στείλετε sms ή email κατευθείαν από τη διαχείριση επαφών χρησιμοποιώντας τις αντίστοιχες εντολές απο την μπάρα ενεργειών!                                                                                                                                   ]]>
+        </s_help_entryManagement_el>
+		<s_help_entryManagement_en>
+            <![CDATA[Most Comidor tables operate with the same simple principles. You can use the procedure bellow to manage almost every enitity of Comidor! For example to manage your contacts:
+	<ul>
+	<li>From the Applications menu on the left select <b>Contacts</b></li>
+	<li>From the horizontal Action bar select <b>New</b>. A pop-up window will allow you to add all the details of a new Contact.</li>
+	<li>To Delete a Contact simply select it and click <b>Delete</b> from the Action bar.</li>
+	<li>If you wish to see a contact double click it on the table. The line will expand and a form with the contacts details will apear</li>
+	<li>To edit a contact click the EDIT icon while viewing it (  <img src="DataServlet?unit=Main&image=EDIT" /> ) </li>
+	</ul>
+<br><br><br><br><br><br><br><br><br>Tip: You can send an email or sms directly from contact management using the relative shortcuts from the Action bar!                                                                                               ]]>
+        </s_help_entryManagement_en>
+
+        <s_help_dashboard_el>
+            <![CDATA[Αφού συνδεθείτε στο Comidor μπορείτε να δείτε το Dashboard, ένα φιλικό τρόπο παρουσίασης των δεδομένων σας. Το κύριο μέρος του Dashboard αποτελείται από το Ημερολόγιο και τη Λίστα Εργασιών.<br><br>
+	<ul>
+	<li>Το <b>Ημερολόγιο</b> συγκεντρώνει τα μηνύματα, τις εργασίες, τα γεγονότα ή άλλα δεδομένα καταχωρημένα στο Comidor. </li>
+	<li>Η <b>Λίστα Εργασιών</b> που καταλαμβάνει το δεξί μέρος του dashboard παρουσιάζει τις εργασίες της επιλεγμένης ημερομηνίας από το ημερολόγιο. Μπορείτε επίσης να δείτε πληροφορίες ανά μήνα κάνοντας κλικ στο όνομα του μήνα, ή τη σύνοψη της εβδομάδας κάνοντας κλικ στο βέλος στην αρχή κάθε εβδομάδας.</li>
+	<li>Στο πλαίσιο <b>Updates</b> μπορείτε να δείτε νέα απο διάφορες πηγές, αλλά και τα τελευταία γεγονότα και καταχωρήσεις της εταιρίας.</li>
+	</ul>                                                                                                                               ]]>
+        </s_help_dashboard_el>
+		<s_help_dashboard_en>
+            <![CDATA[When you connect to Comidor you can see the Dashboard, a friendly way for presenting your data. The createst part of Dashboard consists of the Calendar and the To-Do list.<br><br>
+	<ul>
+	<li>The <b>Calendar</b> gathers information from many different entities and allows you to see all your notes, tasks, actions and orders for a each day.</li>
+	<li>The <b>To-Do List</b> occupies the right half of Dashboard and works with the calendar to present all the above info for the selected day. You can also see such data for a whole month by clicking on the Months name, or for a week by clicking on the small arrow, in front of each week.</li>
+	<li>The <b>Updates</b> widget allows you to see news from different sources, as well as the latest events and addition of the company.</li>
+	</ul>
+                                                                                                                                                                                  ]]>
+        </s_help_dashboard_en>
+
+        <s_help_outlook_el>
+            <![CDATA[Το Outlook είναι ένα εργαλείο που σας επιτρέπει να βλέπετε συγκεντρωτικά όλα τα μηνύματα και τις υποχρεώσεις που εκκρεμούν.<br><br>
+	<ul>
+	<li>Μέσω του Outlook μπορείτε να δημιουργήσετε <b>Νέα σημείωση</b> ή <b>Εργασία</b>, ή μπορείτε να στείλετε <b>email</b>, <b>sms</b> και <b>εσωτερικά μηνύματα</b>. Όλες οι ενέργειες είναι διαθέσιμες απο το οριζόντιο μενού στην κορυφή του Outlook.</li>
+	<li>Όπως και στο Hμερολόγιο (Dashboard) όταν θεωρήσετε ότι έχετε τελειώσει με ένα μήνυμα η μία υποχρέωση πατήστε στο γκρι check <img src=\"DataServlet?unit=Main&image=PENDING\" /> στα δεξιά της γραμμής. Το check θα πρασινίσει για να δηλώσει την αλλαγή, ενώ τα γκρι checks υποδηλώνουν υποχρεώσεις που ακόμα εκκρεμούν.</li>
+	<li>Για να δείτε τις λεπτομέρειες μια εγγραφής του Outlook, απλά κάντε διπλό κλικ πάνω της.</li>
+	</ul>
+	<br><br><br><br><br><br>Tip: Τα μηνύματά σας παραμένουν στο Outlook μέχρι να πατήσετε το <b>Refresh</b> απο το οριζόντιο μενού, δινοντάς σας την δυνατότητα να τα επαναφέρετε σε κατάσταση εκκρεμότητας!                                                                                                                                                ]]>
+        </s_help_outlook_el>
+		<s_help_outlook_en>
+            <![CDATA[Outlook is a tool that allows you to see all your messages and tasks that are pending. It works as a unified inbox for everything you much pay attention to.<br><br>
+	<ul>
+	<li>Through outlook you can create a new <b>Note</b> or <b>Task</b>, or you can send <b>emails</b>, <b>sms</b> and <b>internal messages</b>. All these actions are available from the horizontal action bar at the top of Outlook.</li>
+	<li>As with the Calendar (Dashboard) when you believe you are done with a task or message hit the greyed out check <img src=\"DataServlet?unit=Main&image=PENDING\" /> at the right of the line. The check will change to green to reflect the change while grey checks represent obligations that are still pending.</li>
+	<li>To see the details of an Outlook line simply double click on it. </li>
+	</ul>
+	<br><br><br><br><br>Tip: Your messages and tasks will remain in Outlook until you hit refresh, giving you a chance to change the status back to pending.                                                                                                                                                ]]>
+        </s_help_outlook_en>
+		
+        <s_help_settings_el>
+            <![CDATA[Εάν θέλετε να αλλάξετε τις ρυθμίσεις σας πατήστε <b>Ρυθμίσεις</b> απο το δεξί μενού που βρίσκεται κάτω απο την ημερομηνία, στην πάνω δεξιά γωνία του Comidor<br><br>
+Απο τις ρυθμίσεις μπορείτε να:
+	<ul>
+	<li>Αλλάξετε τις <b>Ρυθμίσεις Χρήστη</b>, στις οποίες περιλαμβάνονται η αλλαγή κωδικού εισόδου στο Comidor, η γλώσσα εμφάνισης του προγράμματος και η προσωπική σας υπογραφή, που χρησιμοποιείτε όταν αποστέλετε κάποιο μήνυμα/email</li>
+	<li><b>Δημιουργήσετε/Αλλάξετε το πρόγραμμα εργασίας</b> σας για συγκεριμένη ημερομηνία ή χρονικό διάστημα, με τις ώρες και τις μέρες τις οποίες εργάζεστε.</li>
+	<li><b>Διαγράψετε το πρόγραμμα σας</b>.</li>
+	<li>Να <b>συνδέσετε το Comidor με το email</b> της εταιρίας σας, ή και το προσωπικό σας email ώστε να μπορείτε να βλέπετε τα μυνηματά σας ενοποιημένα μέσω του Comidor. Η διάκριση μεταξύ εταιρικού και προσωπικού email βρίσκεται στο ότι δεν μπορείτε να διαγράψετε μηνύματα απο τον εταιρικό λογαριασμό σας.</li>
+	</ul>                                                                                                                                    ]]>
+        </s_help_settings_el>
+		<s_help_settings_en>
+            <![CDATA[You can change your <b>Settings</b> by clicking the relative button on the top right corner of Comidor.<br><br>
+From Settings you can:
+	<ul>
+	<li>Change general <b>User Settings</b>, such as your password, language of preference and your personal signatures for emails and messages.</li>
+	<li><b>Create/Change your working schedule</b> for a certain date or period, with the days and hour you are working with.</li>
+	<li><b>Delete your Schedule</b>.</li>
+	<li>Connect Comidor with external emails so you can view all your messages in a unified mailbox. Please note, if you add a new email under company email you will not be allowed to erase messages from this mail, while the same does not apply for your personal emails.</li>
+	</ul>                                                                                                                                    ]]>
+        </s_help_settings_en>
+		
+		<s_help_parameters_el>
+			  <![CDATA[Οι Παράμετροι αφορούν αλλαγές ειδικά για την Ενότητα την οποία δουλεύετε, στην συγκεριμένη περίπτωση για το WebOffice.
+								<ul>
+								<li>Για να τις αλλάξετε κάντε κλικ στην <b>Αλλαγή παραμέτρων</b> απο το βασικό μενού στα αριστερά </li>
+								<li>Στο παράθυρο που θα εμφανιστεί μπορείτε ενδεικτικά να αλλάξετε:
+									<ul>
+									<li>Τον προεπιλεγμένο αριθμό γραμμών που θα εμφανίζονται στις διάφορες εφαρμογές του WebOffice</li>
+									<li>Τον default τύπο εμφάνισης των email σας. Μπορεί να είναι σε text ή σε html μορφή</li>
+									<li>Τις εφαρμογές που θα εμφανίζονται στο βασικό μενού εφαρμογών του WebOffice στα αριστερά. Μπορείτε να κρύψετε/εμφανίσετε μια οντότητα αποεπιλέγοντας/επιλέγοντάς την</li>
+									</ul>
+								</li>
+								<li>Όταν τελειώσετε, κάντε κλικ στο  <b>OΚ</b> και οι παράμετροι θα αποθηκευτούν</li>
+								<li>Για να δείτε τις αλλαγές, ανανεώστε την σελίδα ή επιλέξτε την επιλογή <b>WebOffice</b> απο την πάνω οριζόντια μπάρα.</li>
+								</ul>					 ]]>
+		</s_help_parameters_el>
+		<s_help_parameters_en>
+			  <![CDATA[Parameters have effect only for the Unit you are wokring with, in this case WebOffice
+								<ul>
+								<li>To change parameters click <b>Change Parameters</b> from the main menu on the left </li>
+								<li>From the next window you can change settings such as the following:
+									<ul>
+									<li>The default number of lines for WebOffice Applications</li>
+									<li>The default viewing type of your emails (html or plain text)</li>
+									<li>The Applications you wish to see on the main menu on the left.</li>
+									</ul>
+								</li>
+								<li>To see your changes either refresh your page, or click <b>WebOffice</b> from the horizontal Comidor menu.</li>
+								</ul>					 ]]>
+		</s_help_parameters_en>		
+
+		<s_help_administration_el>
+			  <![CDATA[Αν είστε Διαχειριστής μπορείτε να βρείτε τις σχετικές επιλογές απο το μενού <b>Διαχείριση</b> στο πάνω δεξί μέρος του Comidor.<br>
+								<br>Μια απο τις πρώτες ενέργειες που θα χρειαστεί να κάνετε είναι να προσθέσετε νέους χρήστες στο σύστημα
+								<ul>
+								<li>Επιλέξτε <b>Χρήστες</b> και κάντε κλικ στο <b>Νέο</b> </li>
+								<li>Στο παράθυρο που θα εμφανιστεί βάλτε τα στοιχεία του χρήστη.</li>
+								<li>Το Όνομα Χρήστη χρησιμοποιήται για την πιο φιλική παρουσία των χρηστών απο ότι τα usernames. </li>
+								</li>
+								</ul>
+								<br><br><br><br><br><br><br><br>Tip: Όταν προσθέτετε έναν νέο χρήστη μια επαφή δημιουργείται και συνδέεται αυτόματα μαζί του. Το πεδίο <b>Όνομα Χρήστη</b> αντιγράφεται στην επαφή ώστε να μπορείτε να την εντοπίσετε.					 ]]>
+		</s_help_administration_el>
+		<s_help_administration_en>
+			  <![CDATA[If you are a system manager you can find the relative options through the administration link on the top right corner of Comidor.<br>
+								<br>One of the first actions you will probably need to do is to add new users. On the administration page
+								<ul>
+								<li>Select <b>Users</b> and click <b>New</b></li>
+								<li>Add the users details. Please note, "Users Name" refers to actual name of the user, while "Username" is part of his credentials</li>
+								<li>Users Name is used to identify the user in a more human friendly way than usernames.</li>
+								</li>
+								</ul>
+								<br><br><br><br><br><br><br><br>Tip: When you create a new user a new contact is automatically created and assigned to this user. The <b>Users Name</b> field is added to the contact, so it can be identified and updated with the users details.					 ]]>
+		</s_help_administration_en>	
+		
+		<s_help_esupport_el>
+			  <![CDATA[Αν έχετε οποιαδήποτε ερώτηση/πρόβλημα με τη χρήση του Comidor, επικοινωνήστε μαζί μας μέσω της ηλεκτρονικής υποστήριξης:
+								<ul>
+									<li>Κάντε κλικ στην <b>Ηλεκτρονική Υποστήριξη</b> απο το δεξί μενού που βρίσκεται κάτω απο την ημερομηνία, στην πάνω δεξιά γωνία του Comidor<br></li>
+									<li>Στην επόμενη οθόνη που θα εμφανιστεί κάντε κλικ στο <b>Νέο</b></li>
+									<li>Στο παράθυρο που θα εμφανιστεί θέστε την ερώτηση ή το πρόβλημά σας</li>
+									<li>Η ερώτησή σας θα εμφανιστεί στην λίστα με τις ερωτήσεις και το τμήμα υποστήριξης θα ενημερωθεί για το ερώτημά σας.</li>
+									<li>Ελέγξτε αργότερα στο ίδιο μέρος για να δείτε αν η ερώτησή σας έχει απαντηθεί.</li>
+									<li>Αν επιθυμείτε να προσθέσετε κάτι ή σας ζητηθούν περισσότερες λεπτομέρειες απο το τμήμα υποστήριξης, μπορείτε να προσθέσετε σχόλια κατ' ευθείαν απο το παράθυρο την ερώτησης.</li>
+									<li>Αν η ερωτησή σας έχει απαντηθεί παρακαλούμε σημειώστε <b>Ναι</b> στο αντίστοιχο πλαίσιο.</li>
+								</ul>					 ]]>
+		</s_help_esupport_el>
+		<s_help_esupport_en>
+			  <![CDATA[For any problem or question you may have concerning Comidor you can contact us through e-support:
+								<ul>
+									<li>Click <b>e-support</b> from menu at the top right corner<br></li>
+									<li>On the next screen click <b>New</b></li>
+									<li>You can place your question on the pop-up window, and hit save.</li>
+									<li>Your question will appear on the list of questions and our Support team will be notified.</li>
+									<li>You should check later at the same place to see if your question has been answered.</li>
+									<li>Should you wish to add something to your question or in case our support team inquires additional details for your problem, you can add comments directly from the viewing window. </li>
+									<li>If your question has been answered, please remember to mark it as read and rate the quality of your experience.
+								</ul>					 ]]>
+		</s_help_esupport_en>
+		
+		<s_help_viewtypes_el>
+			  <![CDATA[Το Comidor σας δίνει τη δυνατότητα να δείτε τα δεδομένα σας σε 3 διαφορετικές προβολές. Οι προβολές είναι διαφορετικοί τρόποι να δείτε τα δεδομένα σας. Για παράδειγμα ενώ κοιτάτε τις επαφές που δημιουργήθηκαν τον τελευταίο χρόνο μπορείτε αντι για αριθμητικά δεδομένα να δείτε ένα γράφημα "ανα μήνα". Οι προβολές που προσφέρονται απο το Comidor ειναι:
+								<ul>
+								<li><b>Πίνακας</b> - που είναι η προεπιλεγμένη και αριθμητική μορφή δεδομένων.</li>
+								<li><b>Γράφημα</b> - που είναι ιδιαίτερα χρήσιμη σε οικονομικά δεδομένα ή δεδομένα που περιλαμβάνουν ημερομηνίες.</li>
+								<li><b>Excel</b> -  που σας επιτρέπει να κατεβάσετε σε μορφή Excel τα δεδομένα που βλέπετε εκείνη τη στιγμή στον πίνακα, στον υπολογιστή σας</li>
+								</ul>
+								<br>Οι προβολές είναι διαθέσιμες σε όλες τις εφαρμογές του Comidor. Για να αλλάξετε τη μορφή προβολής των δεδομένων σας, αφου πρώτα εμφανίσετε μόνο αυτα που επιθυμείτε, επιλέξτε από τη λίστα με τίτλο <b>Προβολή Ως:</b> την επιθυμητή μορφή					 ]]>
+		</s_help_viewtypes_el>
+		<s_help_viewtypes_en>
+			  <![CDATA[Comidor allows you to see your data in 3 different views. Views are different ways to see your data. For example while looking accounts created in the last year instead of numeric data you could create a "per month" graph! The different views offered by Comidor are:
+								<ul>
+								<li><b>Table</b> - Which is the default, numeric type of view.</li>
+								<li><b>Graph</b> - Which presents your data as a bar graph for time analysis, or as a pie chart for volume analysis</li>
+								<li><b>Excel</b> - Which exports your data in Excel format.</li>
+								</ul>
+								<br>Views are available in most Comidor Applictions. To change view select the appropriate data first, and then select the appropriate view from the <b>View as</b> list              					 ]]>
+		</s_help_viewtypes_en>
+		
+		<s_help_sendingmessages_el>
+			  <![CDATA[Με το Comidor έχετε μια ολοκληρωμένη πλατφόρμα διαχείρισης του εταιρικού email λογαριασμού σας και των εσωτερικών μηνυμάτων.<br><br>
+								Για να στείλετε ένα εσωτερικό μήνυμα (δηλαδή ένα μήνυμα σε κάποιον άλλο χρήστη του Comidor της εταιρίας σας):<br>
+								<ul>
+								<li>Ανοίξτε το <b>Outlook</b> απο το μενού εφαρμογών στα αριστερά</li>
+								<li>Στην πρώτη μπάρα επιλέξτε <b>Νέο εσωτερικό μήνυμα</b> </li>
+								<li>Στο επόμενο παράθυρο γράψτε το μήνυμά σας και επιλέξτε χρήστη. Για να διαλέξετε χρήστη γράψτε στο πεδίο παραλήπτες το όνομα, το email ή τον αριθμό τηλεφώνου του χρήστη. Καθώς πληκτρολογείτε θα δείτε μια λίστα να γεμίζει με τους χρήστες που καλύπτουν τα κριτήρια σας</li>
+								<li>Πατήστε το <b>Αποστολή</b> για να στείλετε το μήνυμά σας</li>
+								</ul>
+								<br>Μπορείτε να δείτε τα μηνύματά/emails σας στο <b>Outlook</b> ή από την επόμενη οντότητα, τον <b>Αγγελιοφόρο</b> όπου τα email και τα μηνύματα προβάλλονται στους συνήθεις φακέλους (εισερχόμενα, εξερχόμενα κτλ)<br/>
+								<br><br><br>Tip: Αντί για εσωτερικό μήνυμα μπορείτε να στείλετε email επιλέγοντας <b>Νέο email</b> ή sms επιλέγοντας <b>Νέο sms</b>					 ]]>
+		</s_help_sendingmessages_el>
+		<s_help_sendingmessages_en>
+			  <![CDATA[With Comidor you have a complete platform to manage your emails and your and internal messages.<br><br>
+								Internal messages are messages among Comidor users of your company. To send one:<br>
+								<ul>
+								<li>Open <b>Outlook</b> from the applications menu on the left and select <b>new message</b> from the action bar </li>
+								<li>On the popup window type in your message. To select a user start typing his name, email or phone number. As you type you should see a list beeing populated with all the users matching your criteria. Do the same for every additional user you wish to add.</li>
+								<li>Hit <b>Send</b> to send your message, or save to keep a copy at "saved" messages which you can later forward where you wish.</li>
+								</ul>
+								<br>You can see your messages from <b>Outlook</b> or from the next application, the <b>Messanger</b> where your emails and messages are grouped in the typical email folders (inbox, outbox, sent, saved, junk)<br/>
+								<br><br><br>Tip: You can send an email or sms with a similar proccess following the relative links.					 ]]>
+		</s_help_sendingmessages_en>	
+		
+		<s_help_chat_el>
+			  <![CDATA[H Συνομιλία σας επιτρέπει να μιλήσετε με άλλους χρήστες του Comidor που είναι μέσα στο σύστημα την ίδια στιγμή.<br><br>
+						Για να δείτε την συνομιλία επιλέξτε τα <b>Εργαλεία</b> απο το βασικό μενού στα αριστερά και πατήστε στην <b>συνομιλία</b>. 
+						<ul>
+						<li>Το πρώτο "δωμάτιο" συνομιλιών που θα δείτε είναι το δημόσιο, στο οποίο μπορείτε να επικοινωνείτε με όλους τους άλλους χρήστες ταυτόχρονα.</li>
+						<li>Αν θέλετε να μιλήσετε προσωπικά μόνο με κάποιον ή με μια ομάδα ανθρώπων, επιλέξτε τους απο τη λίστα στα δεξιά και και πατήστε "Δημιουργία Δωματίου"</li>
+						<li>Μπορείτε να αλλάζετε δωμάτια πατώντας τα αντίστοιχα εικονίδια στο κάτω μέρος του παραθύρου συνομιλίας, <img src=app/servers/Bopen/images/icon_chatroom.gif /> για το δημόσιο και <img src=app/servers/Bopen/images/icon-chat.png /> τα ιδιωτικά. Αν αφήσετε για λίγο το ποντίκι σας πάνω σε ένα εικονίδιο μπορείτε να δείτε ποιό δωμάτιο είναι.</li>
+						<li>Όταν λαμβάνετε ένα νέο μήνυμα θα δείτε ένα μικρό εικονίδιο να αναβοσβήνει στην πάνω δεξιά γωνία του Comidor. Αν έχετε την συνομιλία ήδη ανοιχτή θα αναβοσβήνει το εικονίδιο του δωματίου όπου υπάρχουν νέα μηνύματα. </li> 
+						<br><br><br>Tip: Όταν κλείνετε το παράθυρο της συνομιλίας τα μηνυματά σας δεν χάνονται ώστε να μπορείτε να το κρύβετε χωρίς πρόβλημα όταν δεν το χρησιμοποιείτε!
+						]]>
+		</s_help_chat_el>	
+		<s_help_chat_en>
+			  <![CDATA[Chat allows you to chat with other Comidor users of your company that are logged in at the same time.<br><br>
+						To access the chat expand the <b>Tools</b> category from the main menu on the left and hit chat. 
+						<ul>
+						<li>The first chatroom you see is "Public" and is a place where everyone logged in can chat with each other.</li>
+						<li>If you wish to chat privately with someone or a group of people, select their names from the list on the right and hit "create chat room"</li>
+						<li>You can navigate between chat rooms with the respective icons on the bottom of the chat window, <img src=app/servers/Bopen/images/icon_chatroom.gif /> for the public room and <img src=app/servers/Bopen/images/icon-chat.png />for private ones, while leaving your mouse for a few seconds on the icon of a private room will tell you which chat room it is.</li>
+						<li>If you receive a chat message you should see a blinking icon on the top right window of Comidor. If your chat is already open, the icon of the private chat that has new messages will blink </li> 
+						<br><br><br><br>Tip: When you hide the chat your converstations are not lost, so you can safely hide it when you dont need it!
+						]]>
+		</s_help_chat_en>	
+		
+
+     </SOURCES>
+
+</DOCUMENT-OBJECTS>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-22" time="08:52:38" key="99e9424b42bcb554328f8e68163ba2b3"></Source>
+
+     <DEFINITIONS>
+
+         <default type="Procedure"></default>
+         <setProperties type="Procedure"></setProperties>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_default
+            action_type="after_unit_open"
+        ></s_default>
+        <s_setProperties
+            action_type="after_unit_open"
+         ></s_setProperties>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_default>
+            <![CDATA[START:s_default
+
+HTML
+
+
+<!DOCTYPE html>
+
+<script>
+
+	jQuery(document).ready(function() {
+
+		jQuery('#calendar').fullCalendar({
+			defaultDate: '2015-02-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: 'All Day Event',
+					start: '2015-02-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2015-02-07',
+					end: '2015-02-10'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2015-02-09T16:00:00'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2015-02-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2015-02-11',
+					end: '2015-02-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2015-02-12T10:30:00',
+					end: '2015-02-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2015-02-12T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2015-02-12T14:30:00'
+				},
+				{
+					title: 'Happy Hour',
+					start: '2015-02-12T17:30:00'
+				},
+				{
+					title: 'Dinner',
+					start: '2015-02-12T20:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2015-02-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2015-02-28'
+				}
+			]
+		});
+		
+	});
+
+
+	<div id='calendar'></div>
+
+
+ENDHTML
+
+RETURN 1            ]]>
+        </s_default>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

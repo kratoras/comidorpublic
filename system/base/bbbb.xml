@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BBBB>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-15" time="15:26:07" key="367fe6487474b8e5e9bcc95832db088"></Source>
+
+     <PROPERTIES>
+
+        <AUTHOR
+            decimals="0"
+            default=""
+            edit_format=""
+            label="AUTHOR"
+            lines="0"
+            lookup="MEMBER"
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="100"
+            type="RECORD"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format=""
+        ></AUTHOR>
+        <TITLE
+            decimals="0"
+            default=""
+            edit_format=""
+            label="TITLE"
+            lines="0"
+            lookup="BOOKS"
+            notnull="false"
+            page="0"
+            permission=""
+            position=""
+            security_level=""
+            signed="true"
+            size="100"
+            type="RECORD"
+            update_mode=""
+            value_limits=""
+            value_list=""
+            view_format=""
+         ></TITLE>
+
+     </PROPERTIES>
+
+</BBBB>

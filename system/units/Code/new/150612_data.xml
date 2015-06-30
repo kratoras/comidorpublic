@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DATA-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-12" time="10:24:00" key="ae254d84c92c26ade65ad342c9873371"></Source>
+
+     <DEFINITIONS>
+
+         <DataForm1 type="DataForm"></DataForm1>
+         <DataSet3 type="DataSet"></DataSet3>
+         <Record2 type="Record"></Record2>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_DataForm1
+            data_record="s_Record2"
+        ></s_DataForm1>
+        <s_DataSet3
+            actions="EDIT:Edit,DELETE:Delete"
+            block_size="-1"
+            data_record="s_Record2"
+            delete_mode="true"
+            execute_mode="true"
+            insert_mode="true"
+            select_query="SELECT * FROM TEST3"
+            title="tst4"
+            view_mode="true"
+        ></s_DataSet3>
+        <s_Record2
+            data_table="TEST3"
+            delete_mode="true"
+            extra_fields="ALL"
+            insert_mode="true"
+            master_update_mode="true"
+            update_mode="true"
+            view_mode="true"
+         ></s_Record2>
+
+     </PROPERTIES>
+
+</DATA-OBJECTS>

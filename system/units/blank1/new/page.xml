@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PAGE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-19" time="15:17:16" key="1594e3543367ecd7b689f0463e0be94"></Source>
+
+     <DEFINITIONS>
+
+         <Code0 type="Html.Code"></Code0>
+         <Panel0 type="Panel"></Panel0>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_Code0
+            height="1"
+            panel="s_Panel0"
+            width="1"
+            x_position="0"
+            y_position="0"
+        ></s_Code0>
+        <s_Panel0
+            elements="s_Code0"
+            height="1"
+            layout="VERTICAL_TABBED"
+            width="1"
+            x_position="0"
+            y_position="0"
+         ></s_Panel0>
+
+     </PROPERTIES>
+
+</PAGE-OBJECTS>

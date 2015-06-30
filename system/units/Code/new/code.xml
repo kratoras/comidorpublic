@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-12" time="14:36:05" key="c9928b3f145d1e56dea73fa35464724d"></Source>
+
+     <DEFINITIONS>
+
+         <help type="Procedure"></help>
+         <procedure1 type="Procedure"></procedure1>
+         <procedure2 type="Procedure"></procedure2>
+         <save type="Procedure"></save>
+         <setProperties type="Procedure"></setProperties>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_procedure1
+            action_type="after_unit_open"
+        ></s_procedure1>
+        <s_save
+            action_type="s_save.on_execute"
+        ></s_save>
+        <s_setProperties
+            action_type="after_unit_open"
+         ></s_setProperties>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_help>
+            <![CDATA[START:s_help                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ]]>
+        </s_help>
+
+        <s_procedure1>
+            <![CDATA[START:s_procedure1
+
+  CALL s_procedure2
+   
+ 
+	HTML
+	
+//	<span class='formRowValueTop'>#s_JobRec.JP_TASKS.USER_CODE style=width:400px;&doNo=false&postValue=true#</span>
+	           <form>
+	            #s_DataSet3.TEST3.BOOK_TITLE label#: <input type="text" name="BOOK_TITLE" id="111" value=""><br>
+			    #s_DataSet3.TEST3.AUTHOR_NAME label#: <input type="text" name="LastName" value=""><br>
+				#s_DataSet3.TEST3.EDITION label#: <input type="number" name="LastName" value=""><br>
+                #s_DataSet3.TEST3.YEAR label#: <input type="number" name="LastName" value=""><br>
+		        #s_DataSet3.TEST3.ISSN_ISBN label#: <input type="number" name="LastName" value=""><br>
+		        #s_DataSet3.TEST3.LIBRARY_ID label#: <input type="number" name="LastName" value=""><br>
+			    #s_DataSet3.TEST3.LOST label#: <input type="text" name="LastName" value=""><br>
+			    #s_DataSet3.TEST3.HOLD label#: <input type="text" name="LastName" value=""><br>
+	            </form>
+	            
+                
+	            <div  >
+	            <button onclick="myFunction()">Press me</button>
+                    <script>
+                        function myFunction() {
+                       // int x = document.getElementById('111').value;
+                        alert(x.innerHTML)
+                        }
+                    </script>
+		        </div>
+		        
+		        
+    #s_save#
+		        
+	ENDHTML
+	
+RETURN 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ]]>
+        </s_procedure1>
+
+        <s_procedure2>
+            <![CDATA[START:s_procedure2
+
+
+@VAR:INTEGER
+@VAR=0
+        ACTION s_DataSet3 EXECUTE     
+        first s_DataSet3 
+
+        LOOP
+            IF (#VALUE#<=0)
+                BREAK
+                
+                
+        HTML
+			
+				<div class='formRow'>
+					<span>#s_DataSet3.TEST3.BOOK_TITLE#</span>
+					<span>#s_DataSet3.TEST3.AUTHOR_NAME#</span>
+					<span>#s_DataSet3.TEST3.EDITION#</span>
+                    <span>#s_DataSet3.TEST3.YEAR#</span>
+		        	<span>#s_DataSet3.TEST3.ISSN_ISBN#</span>
+		            <span>#s_DataSet3.TEST3.LIBRARY_ID#</span>
+				    <span>#s_DataSet3.TEST3.LOST#</span>
+			        <span>#s_DataSet3.TEST3.HOLD#</span>
+			    </div>
+        ENDHTML
+        
+        
+            
+            next s_DataSet3
+        ENDLOOP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ]]>
+        </s_procedure2>
+
+        <s_save>
+            <![CDATA[START:s_save                                                                                                                                                                                                                                                                                                                                                            ]]>
+        </s_save>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

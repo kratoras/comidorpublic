@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-09" time="09:37:39" key="c5d087964c9bc7a108c4884afe9df2e4"></Source>
+
+     <DEFINITIONS>
+
+         <procedure1 type="Procedure"></procedure1>
+         <procedure2 type="Procedure"></procedure2>
+         <setProperties type="Procedure"></setProperties>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_procedure1
+            action_type="after_unit_open"
+        ></s_procedure1>
+        <s_procedure2
+            action_type="s_DataForm1.on_submit"
+        ></s_procedure2>
+        <s_setProperties
+            action_type="after_unit_open"
+         ></s_setProperties>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_procedure1>
+            <![CDATA[START:s_procedure1
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.centered false
+	PROPERTY this table.border 0
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+  RETURN 1																	                        ]]>
+        </s_procedure1>
+
+        <s_procedure2>
+            <![CDATA[START:s_procedure2
+	HTML
+		<div class='formContainer'>
+			<div class='rightBlockContainer'>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.START_DATE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.START_DATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.START_TIME label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.START_TIME#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.END_DATE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.END_DATE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.END_TIME label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.END_TIME#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.TYPE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.TYPE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.CATEGORY label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.CATEGORY#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.DESCRIPTION label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.DESCRIPTION#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.USER_CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.USER_CODE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.IMPORTANCE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.IMPORTANCE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.KEYWORDS label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.KEYWORDS#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.OWNER_ID label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.OWNER_ID#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.ADMIN_USER label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.ADMIN_USER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.ADMIN_USER2 label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.ADMIN_USER2#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.ACCESS_CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.ACCESS_CODE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.JP_TOPICS.CHANGE_CODE label#</span>
+					<span class='formRowValue'>#s_Record1.JP_TOPICS.CHANGE_CODE#</span>
+				</div>
+
+        </div>		</div>
+		
+	ENDHTML
+  RETURN 1																	                        ]]>
+        </s_procedure2>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

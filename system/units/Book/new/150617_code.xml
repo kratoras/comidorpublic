@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CODE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-17" time="07:50:29" key="f1a69be3e4c8461bc42cdf851a406467"></Source>
+
+     <DEFINITIONS>
+
+         <procedure1 type="Procedure"></procedure1>
+         <procedure2 type="Procedure"></procedure2>
+         <setProperties type="Procedure"></setProperties>
+         <validation type="Procedure"></validation>
+         <validation1 type="Procedure"></validation1>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_procedure1
+            action_type="after_unit_open"
+        ></s_procedure1>
+        <s_procedure2
+            action_type="s_DataForm1.on_submit"
+        ></s_procedure2>
+        <s_setProperties
+            action_type="after_unit_open"
+        ></s_setProperties>
+        <s_validation
+            action_type="s_Record1.before_insert"
+        ></s_validation>
+        <s_validation1
+            action_type="s_Record1.before_update"
+         ></s_validation1>
+
+     </PROPERTIES>
+
+     <SOURCES>
+
+        <s_procedure1>
+            <![CDATA[START:s_procedure1
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.centered false
+	PROPERTY this table.border 0
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+  RETURN 1																	                                                                                                                                                                                                                                                                                                                                                                                                                                                ]]>
+        </s_procedure1>
+
+        <s_procedure2>
+            <![CDATA[START:s_procedure2
+
+ACTION  s_Variable1 EXECUTE 
+@VAR1:INTEGER
+
+@VAR1 = #s_Record1.BOOKS.COPIES# - #s_Variable1#
+#s_Record1.BOOKS.AVALIABLE_COPIES# = @VAR1
+
+	HTML
+		<div class='formContainer'>
+			<div class='rightBlockContainer'>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.TITLE label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.TITLE#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.AUTHOR label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.AUTHOR#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.EDITION label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.EDITION#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.YEAR_OF_PUBLICATION label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.YEAR_OF_PUBLICATION#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.ISBN_ISSN label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.ISBN_ISSN#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.LIBRARY_NUMBER label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.LIBRARY_NUMBER#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.CONDITION_BOOK label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.CONDITION_BOOK#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.BORROWED_BEGIN label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.BORROWED_BEGIN#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.BORROWED_END label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.BORROWED_END#</span>
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.COPIES label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.COPIES#</span>
+				</div>
+				<div>
+					<span class='formRowLabel'>#s_Record1.BOOKS.AVALIABLE_COPIES label#</span>
+					<span class='formRowValue'>@VAR1</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.AVALIABLE_COPIES#</span>
+				
+				</div>
+				<div class='formRow'>
+					<span class='formRowLabel'>#s_Record1.BOOKS.VALUE_PRICE label#</span>
+					<span class='formRowValue'>#s_Record1.BOOKS.VALUE_PRICE#</span>
+				</div>
+
+        </div>		</div>
+        
+        
+		
+	ENDHTML
+	
+  RETURN 1																	                                                                                                                                                                                                                                                                                                                                                                                                                                                ]]>
+        </s_procedure2>
+
+        <s_setProperties>
+            <![CDATA[START:s_setProperties
+	DOCTYPE <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	PROPERTY this table.columns 1
+	PROPERTY this table.rows 1
+	PROPERTY this table.border 0
+	PROPERTY this table.layout fixed
+	PROPERTY this table.width 100%
+	PROPERTY this table.tdwidth 4%
+	PROPERTY this table.cellpadding 0
+	PROPERTY this table.className newback2
+	PROPERTY this table.classNameie newback2
+	PROPERTY this td1.overflow visible
+	PROPERTY this td1.indivheight 100%
+
+	RETURN 1
+            ]]>
+        </s_setProperties>
+
+        <s_validation>
+            <![CDATA[START:s_validation
+
+IF (#s_Record1.BOOKS.EDITION#<=0) 
+{
+JAVASCRIPT alert("Enter a valid Book Edition");
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.YEAR_OF_PUBLICATION#<=0)
+{
+JAVASCRIPT alert("Enter a valid Year of Publication");
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.LIBRARY_NUMBER#<=0)
+{
+JAVASCRIPT alert("Enter a valid Library ID");
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.COPIES#<=0)
+{
+JAVASCRIPT alert("Enter a valid number of Copies");
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.VALUE_PRICE#<=0)
+{
+JAVASCRIPT alert("Enter a valid Price");
+RETURN 0
+}
+
+RETURN 1                                                                                                                                                                                                                                                                                                                                    ]]>
+        </s_validation>
+
+        <s_validation1>
+            <![CDATA[START:s_validation1
+
+IF (#s_Record1.BOOKS.EDITION#<=0) 
+{
+ERROR ERROR "Enter a valid Book Edition"
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.YEAR_OF_PUBLICATION#<=0)
+{
+ERROR ERROR "Enter a valid Year of Publication"
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.LIBRARY_NUMBER#<=0)
+{
+ERROR ERROR "Enter a valid Library ID"
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.COPIES#<=0)
+{
+ERROR ERROR "Enter a valid number of Copies"
+RETURN 0
+}
+
+IF (#s_Record1.BOOKS.VALUE_PRICE#<=0)
+{
+ERROR ERROR "Enter a valid Price"
+RETURN 0
+}
+
+RETURN 1                                                                                                                                                                                                                                                                                                                                    ]]>
+        </s_validation1>
+
+     </SOURCES>
+
+</CODE-OBJECTS>

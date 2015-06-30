@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DATA-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="testapp2" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2014-11-28" time="14:28:53" key="babe74392bba166b37f8af3411a4409e"></Source>
+
+     <DEFINITIONS>
+
+         <DataForm1 type="DataForm"></DataForm1>
+         <DataSet1 type="DataSet"></DataSet1>
+         <Record1 type="Record"></Record1>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_DataForm1
+            data_record="s_Record1"
+        ></s_DataForm1>
+        <s_DataSet1
+				 actions="EDIT:Edit,DELETE:Delete"            data_record="s_Record1"
+            node_list="NAME"
+            select_query="SELECT * FROM CUS"
+            title="cus"
+            delete_mode="true"
+            insert_mode="true"
+            edit_mode="true"
+            view_mode="true"
+        ></s_DataSet1>
+        <s_Record1
+            data_table="CUS"
+            extra_fields="ALL"
+            delete_mode="true"
+            insert_mode="true"
+            update_mode="true"
+            view_mode="true"
+         ></s_Record1>
+
+     </PROPERTIES>
+
+</DATA-OBJECTS>

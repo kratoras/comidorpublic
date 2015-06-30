@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PAGE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-15" time="14:56:55" key="f2f3f52f6ca0083a32a7e3b2a950b3d"></Source>
+
+     <DEFINITIONS>
+
+         <Bar2 type="Html.Bar"></Bar2>
+         <Form4 type="Html.Form"></Form4>
+         <Panel0 type="Panel"></Panel0>
+         <RecordBar6 type="Html.RecordBar"></RecordBar6>
+         <Table1 type="Html.Table"></Table1>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_Bar2
+            data_set="s_DataSet1"
+            elements="s_Bar2.CRITERIA,s_Bar2.REFRESH,s_Bar2.SET_CATEGORY,s_Bar2.DELETE"
+        ></s_Bar2>
+        <s_Form4
+            data_form="s_DataForm1"
+            data_record="s_Record1"
+            editable="false"
+            page="0"
+            position="1000"
+            title="Rents"
+        ></s_Form4>
+        <s_Panel0
+            edit_mode="true"
+            elements="s_Table1"
+            height="1"
+            layout="VERTICAL_TABBED"
+            width="1"
+            x_position="0"
+            y_position="0"
+        ></s_Panel0>
+        <s_RecordBar6
+            data_set="s_DataSet1"
+            elements="s_RecordBar6.EDIT,s_RecordBar6.DELETE"
+            panel="s_Panel0"
+        ></s_RecordBar6>
+        <s_Table1
+            chart_view="false"
+            data_set="s_DataSet1"
+            edit_mode="true"
+            elements="s_Table1.RENTED.TITLE_RENT_BOOK,s_Table1.RENTED.NAME_MEMBER,s_Table1.RENTED.COPIES,s_Table1.RENTED.START_DATE,s_Table1.RENTED.ENDDATE"
+            graph_view="true"
+            new_view="true"
+            panel="s_Panel0"
+            record_view="true"
+            table_view="true"
+            title="Rents"
+         ></s_Table1>
+
+     </PROPERTIES>
+
+</PAGE-OBJECTS>

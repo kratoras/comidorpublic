@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PAGE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-29" time="10:51:02" key="fc6742fe0284e4fc311314eacdaaa979"></Source>
+
+     <PROPERTIES>
+
+        <Table13
+            chart_view="false"
+            graph_view="true"
+            parameters="has_access=true\ndefault_access=false\nzebraView=false\nviewType=tab\ngridEditable=false"
+        ></Table13>
+        <UserForm
+            editable="true"
+            page="0"
+            position="1000"
+        ></UserForm>
+        <UsersBar
+            elements="UsersBar.CRITERIA,UsersBar.REFRESH,UsersBar.SEARCH_TEXT,UsersBar.SEARCH_DATE,UsersBar.SEARCH_STATE,UsersBar.SEARCH_PAGING,UsersBar.SET_CATEGORY,UsersBar.SET_GROUPBY,UsersBar.ACTIVATE_USER,UsersBar.DEACTIVATE_USER,UsersBar.ACTION,UsersBar.VIEW,UsersBar.ALL,UsersBar.SEARCH,UsersBar.SET,UsersBar.SET_VIEWAS"
+         ></UsersBar>
+
+     </PROPERTIES>
+
+</PAGE-OBJECTS>

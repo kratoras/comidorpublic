@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PAGE-OBJECTS>
+
+<jPlaton version="2_8j"></jPlaton>
+<Application code="bo-system" name="database226" key="2fbd92c88106dc26c55797d7f29f01bf"></Application>
+<Developer code="1" name="B-open" key="3478403624e74e4cf44ca4a78bda74fe"></Developer>
+<Source date="2015-06-09" time="14:59:40" key="9e5b8a09ec448c344dbd5842ca168d1"></Source>
+
+     <DEFINITIONS>
+
+         <Bar2 type="Html.Bar"></Bar2>
+         <Form4 type="Html.Form"></Form4>
+         <Panel0 type="Panel"></Panel0>
+         <RecordBar6 type="Html.RecordBar"></RecordBar6>
+         <Table1 type="Html.Table"></Table1>
+
+     </DEFINITIONS>
+
+     <PROPERTIES>
+
+        <s_Bar2
+            data_set="s_DataSet1"
+            elements="s_Bar2.CRITERIA,s_Bar2.REFRESH,s_Bar2.SET_CATEGORY,s_Bar2.DELETE"
+        ></s_Bar2>
+        <s_Form4
+            data_form="s_DataForm1"
+            data_record="s_Record1"
+            editable="false"
+            page="0"
+            parameters="show_title=true"
+            position="1000"
+            title="tst2"
+        ></s_Form4>
+        <s_Panel0
+            edit_mode="true"
+            elements="s_Table1"
+            height="1"
+            layout="VERTICAL_TABBED"
+            width="1"
+            x_position="0"
+            y_position="0"
+        ></s_Panel0>
+        <s_RecordBar6
+            data_set="s_DataSet1"
+            elements="s_RecordBar6.EDIT,s_RecordBar6.DELETE"
+            panel="s_Panel0"
+        ></s_RecordBar6>
+        <s_Table1
+            chart_view="false"
+            data_set="s_DataSet1"
+            edit_mode="true"
+            elements="s_Table1.TEST3.BOOK_TITLE,s_Table1.TEST3.AUTHOR_NAME,s_Table1.TEST3.EDITION,s_Table1.TEST3.YEAR,s_Table1.TEST3.ISSN_ISBN,s_Table1.TEST3.LIBRARY_ID,s_Table1.TEST3.LOST,s_Table1.TEST3.HOLD"
+            graph_view="true"
+            new_view="true"
+            panel="s_Panel0"
+            parameters="has_access=true\ndefault_access=true\nzebraView=false\ngridEditable=false"
+            record_view="true"
+            table_view="true"
+            title="tst2"
+         ></s_Table1>
+
+     </PROPERTIES>
+
+</PAGE-OBJECTS>
